@@ -9,8 +9,12 @@ module ThreeLittlePigs
       story
     end
 
+    def beginning
+      OpenStruct.new
+    end
+
     def story
-      @story ||= OpenStruct.new
+      @story ||= beginning
     end
     private_class_method :story
   end

@@ -1,2 +1,1 @@
-1. Once upon a time there was a mother pig who lived in a house with her
-   three little pigs.
+1. Once upon a time, there were three little pigs whose names were Fifer, Fidder, and Practical.  And they all lived together with their mother in her house.
