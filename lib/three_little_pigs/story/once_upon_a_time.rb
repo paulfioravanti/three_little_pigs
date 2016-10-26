@@ -4,18 +4,17 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        story.fifer = Pig.new(name: "Fifer")
-        story.fiddler = Pig.new(name: "Fiddler")
-        story.practical = Pig.new(name: "Practical")
+        story.first_pig = Pig.new
+        story.second_pig = Pig.new
+        story.third_pig = Pig.new
         story.mother =
           Pig.new(
-            name: "Mother",
-            children: [story.fifer, story.fiddler, story.practical]
+            children: [story.first_pig, story.second_pig, story.third_pig]
           )
         story.mothers_house =
           House.new(
             occupants: [
-              story.mother, story.fifer, story.fiddler, story.practical
+              story.mother, story.first_pig, story.second_pig, story.third_pig
             ]
           )
       end

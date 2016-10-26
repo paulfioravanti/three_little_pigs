@@ -3,31 +3,27 @@ require "spec_helper"
 module ThreeLittlePigs
   module Story
     RSpec.describe OnceUponATime do
-      let(:story) { Story.beginning }
+      let(:story) { Story.so_far }
 
       before do
         OnceUponATime.tell(story)
       end
 
       specify "there were three little pigs" do
-        expect(story.fifer).to \
-          be_a(Pig).and have_attributes(name: "Fifer")
-        expect(story.fiddler).to \
-          be_a(Pig).and have_attributes(name: "Fiddler")
-        expect(story.practical).to \
-          be_a(Pig).and have_attributes(name: "Practical")
+        expect(story.first_pig).to be_a(Pig)
+        expect(story.second_pig).to be_a(Pig)
+        expect(story.third_pig).to be_a(Pig)
       end
 
-      specify "there was the little pigs' mother" do
-        expect(story.mother).to \
-          be_a(Pig).and have_attributes(name: "Mother")
+      specify "there was a mother pig" do
+        expect(story.mother).to be_a(Pig)
         expect(story.mother.children).to \
-          include(story.fifer, story.fiddler, story.practical)
+          eq([story.first_pig, story.second_pig, story.third_pig])
       end
 
-      specify "they lived together in the mother's house" do
+      specify "the pigs lived together in the mother's house" do
         expect(story.mothers_house.occupants).to \
-          include(story.mother, story.fifer, story.fiddler, story.practical)
+          eq([story.mother, story.first_pig, story.second_pig, story.third_pig])
       end
     end
   end

@@ -1,9 +1,8 @@
 module ThreeLittlePigs
   class Pig
-    attr_reader :name, :children
+    attr_reader :children
 
-    def initialize(name: nil, children: [])
-      @name = name
+    def initialize(children: [])
       @children = children
     end
   end
