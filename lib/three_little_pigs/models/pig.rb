@@ -1,12 +1,12 @@
 module ThreeLittlePigs
   class Pig
-    attr_reader :children, :income
+    attr_reader :children, :wealth
     attr_accessor :inventory
 
-    def initialize(inventory: [], children: [], income: Income.level(:none))
+    def initialize(inventory: [], children: [], wealth: Wealth.level(:none))
       @inventory = inventory
       @children = children
-      @income = income
+      @wealth = wealth
     end
   end
 end

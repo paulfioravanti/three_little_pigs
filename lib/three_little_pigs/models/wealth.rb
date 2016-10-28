@@ -1,5 +1,5 @@
 module ThreeLittlePigs
-  module Income
+  module Wealth
     module_function
 
     def level(level)

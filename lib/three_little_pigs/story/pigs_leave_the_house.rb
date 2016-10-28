@@ -4,7 +4,7 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        if story.mother_pig.income < Income.level(:medium)
+        if story.mother_pig.wealth < Wealth.level(:medium)
           story.mothers_house.occupants.reject! do |occupant|
             occupant != story.mother_pig
           end
