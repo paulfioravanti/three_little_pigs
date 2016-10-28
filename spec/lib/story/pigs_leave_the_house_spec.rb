@@ -10,7 +10,7 @@ module ThreeLittlePigs
       end
 
       specify "the mother pig did not have much money" do
-        expect(story.mother_pig.income).to eq(Income.level("Low"))
+        expect(story.mother_pig.income).to eq(Income.level(:low))
       end
 
       specify "the mother pigs sent the three little pigs away" do

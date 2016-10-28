@@ -4,8 +4,7 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        bundle_of_straw = Array.new(10, Straw.new)
-        story.straw_man = Man.new(inventory: bundle_of_straw)
+        story.straw_man = Man.new(inventory: Bundle.of(:straw))
       end
     end
   end

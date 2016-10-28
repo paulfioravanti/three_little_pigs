@@ -9,6 +9,7 @@ module ThreeLittlePigs
         story.third_pig = Pig.new
         story.mother_pig =
           Pig.new(
+            income: Income.level(:low),
             children: [story.first_pig, story.second_pig, story.third_pig]
           )
         story.mothers_house =
