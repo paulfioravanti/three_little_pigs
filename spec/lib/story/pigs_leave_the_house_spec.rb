@@ -12,7 +12,7 @@ module ThreeLittlePigs
       end
 
       specify "the mother pig sent the three little pigs away" do
-        expect(story.mothers_house.occupants).to eq([story.mother_pig])
+        expect(story.mother_pig.house.occupants).to eq([story.mother_pig])
       end
     end
   end

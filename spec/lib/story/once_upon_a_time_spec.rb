@@ -21,7 +21,7 @@ module ThreeLittlePigs
       end
 
       specify "the pigs lived together in the mother's house" do
-        expect(story.mothers_house.occupants).to eq(
+        expect(story.mother_pig.house.occupants).to eq(
           [story.mother_pig, story.first_pig, story.second_pig, story.third_pig]
         )
       end

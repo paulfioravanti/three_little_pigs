@@ -4,10 +4,10 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        if story.mother_pig.wealth < Wealth.level(:medium)
-          story.mothers_house.occupants.reject! do |occupant|
-            occupant.child_of?(story.mother_pig)
-          end
+        mother = story.mother_pig
+        mother.wealth = Wealth.level(:low)
+        if mother.wealth < Wealth.level(:medium)
+          mother.send_away(mother.children)
         end
       end
     end

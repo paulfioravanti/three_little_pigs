@@ -22,6 +22,10 @@ module ThreeLittlePigs
       end
     end
 
+    def house_belonging_to(owner)
+      story.houses.find {|house| house.owner == owner }
+    end
+
     def story
       @story ||= OpenStruct.new
     end

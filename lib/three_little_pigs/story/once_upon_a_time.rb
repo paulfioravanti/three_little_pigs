@@ -4,23 +4,20 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        story.first_pig = Pig.new
-        story.second_pig = Pig.new
-        story.third_pig = Pig.new
-        story.mother_pig =
-          Pig.new(
-            inventory: [Wealth.level(:low)],
-            children: [story.first_pig, story.second_pig, story.third_pig]
-          )
-        story.mothers_house =
-          House.new(
-            occupants: [
-              story.mother_pig,
-              story.first_pig,
-              story.second_pig,
-              story.third_pig
-            ]
-          )
+        first_pig = story.first_pig = Pig.new
+        second_pig = story.second_pig = Pig.new
+        third_pig = story.third_pig = Pig.new
+
+        mother_pig = story.mother_pig =
+          Pig.new(children: [first_pig, second_pig, third_pig])
+
+        story.houses =
+          [
+            House.new(
+              owner: mother_pig,
+              occupants: [mother_pig, *mother_pig.children]
+            )
+          ]
       end
     end
   end

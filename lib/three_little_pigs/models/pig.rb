@@ -1,19 +1,25 @@
 module ThreeLittlePigs
   class Pig
-    attr_reader :children
+    extend Forwardable
+
+    attr_reader :children, :house
     attr_accessor :inventory
 
-    def initialize(inventory: [], children: [])
+    def_delegators :@inventory, :wealth, :wealth=
+
+    def initialize(inventory: OpenStruct.new, children: [])
       @inventory = inventory
       @children = children
     end
 
-    def wealth
-      inventory.find { |item| item.kind_of?(Wealth) }
+    def house
+      @house ||= Story.house_belonging_to(self)
     end
 
-    def child_of?(pig)
-      pig.children.include?(self)
+    def send_away(pigs)
+      house.occupants.reject! do |occupant|
+        pigs.include?(occupant)
+      end
     end
   end
 end
