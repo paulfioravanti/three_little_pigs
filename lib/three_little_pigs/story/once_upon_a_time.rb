@@ -7,14 +7,17 @@ module ThreeLittlePigs
         story.first_pig = Pig.new
         story.second_pig = Pig.new
         story.third_pig = Pig.new
-        story.mother =
+        story.mother_pig =
           Pig.new(
             children: [story.first_pig, story.second_pig, story.third_pig]
           )
         story.mothers_house =
           House.new(
             occupants: [
-              story.mother, story.first_pig, story.second_pig, story.third_pig
+              story.mother_pig,
+              story.first_pig,
+              story.second_pig,
+              story.third_pig
             ]
           )
       end

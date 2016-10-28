@@ -1,9 +1,5 @@
-module ThreeLittlePigs
-  class Pig
-    attr_reader :children
+require "ostruct"
 
-    def initialize(children: [])
-      @children = children
-    end
-  end
+module ThreeLittlePigs
+  Pig = OpenStruct
 end

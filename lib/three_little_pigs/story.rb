@@ -1,5 +1,6 @@
 require "ostruct"
 require "yaml"
+require "pry"
 
 module ThreeLittlePigs
   module Story
@@ -9,12 +10,12 @@ module ThreeLittlePigs
     module_function
 
     def tell
-      OnceUponATime.tell(story)
+      CHAPTERS.each { |chapter| const_get(chapter).tell(story) }
       story
     end
 
-    def so_far(until_chapter: "OnceUponATime")
-      chapter = until_chapter.split("::").last
+    def so_far(until_chapter: OnceUponATime)
+      chapter = until_chapter.to_s.split("::").last
       chapters_so_far = CHAPTERS.slice(0...CHAPTERS.index(chapter))
       chapters_so_far.each_with_object(story) do |the_chapter, the_story|
         const_get(the_chapter).tell(the_story)
