@@ -5,9 +5,7 @@ module ThreeLittlePigs
     RSpec.describe OnceUponATime do
       let(:story) { Story.so_far }
 
-      before do
-        OnceUponATime.tell(story)
-      end
+      before { OnceUponATime.tell(story) }
 
       specify "there was a mother pig" do
         expect(story.mother_pig).to be_a(Pig)

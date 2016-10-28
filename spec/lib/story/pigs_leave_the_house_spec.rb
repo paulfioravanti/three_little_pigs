@@ -5,9 +5,7 @@ module ThreeLittlePigs
     RSpec.describe PigsLeaveTheHouse do
       let(:story) { Story.so_far(until_chapter: PigsLeaveTheHouse) }
 
-      before do
-        PigsLeaveTheHouse.tell(story)
-      end
+      before { PigsLeaveTheHouse.tell(story) }
 
       specify "the mother pig did not have much money" do
         expect(story.mother_pig.wealth).to eq(Wealth.level(:low))

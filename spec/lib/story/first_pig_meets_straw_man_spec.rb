@@ -5,9 +5,7 @@ module ThreeLittlePigs
     RSpec.describe FirstPigMeetsStrawMan do
       let(:story) { Story.so_far(until_chapter: FirstPigMeetsStrawMan) }
 
-      before do
-        FirstPigMeetsStrawMan.tell(story)
-      end
+      before { FirstPigMeetsStrawMan.tell(story) }
 
       specify "the first little pig met a man carrying a bundle of straw" do
         expect(story.straw_man).to be_a(Man)
