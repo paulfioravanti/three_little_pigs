@@ -11,5 +11,9 @@ module ThreeLittlePigs
     def wealth
       inventory.find { |item| item.kind_of?(Wealth) }
     end
+
+    def child_of?(pig)
+      pig.children.include?(self)
+    end
   end
 end
