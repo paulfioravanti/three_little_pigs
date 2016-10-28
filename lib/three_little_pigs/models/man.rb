@@ -1,5 +1,5 @@
 require "ostruct"
 
 module ThreeLittlePigs
-  House = OpenStruct
+  Man = OpenStruct
 end
