@@ -13,9 +13,7 @@ module ThreeLittlePigs
     end
 
     def send_away(pigs)
-      house.occupants.reject! do |occupant|
-        pigs.include?(occupant)
-      end
+      house.occupants.reject! { |occupant| pigs.include?(occupant) }
     end
   end
 end
