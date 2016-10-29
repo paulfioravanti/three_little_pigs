@@ -6,9 +6,9 @@ module ThreeLittlePigs
       @inventory = inventory
     end
 
-    def give(material, to:)
+    def give(material_name, to:)
       material =
-        Module.const_get("#{Module.nesting.last}::#{material.capitalize}")
+        Module.const_get("#{Module.nesting.last}::#{material_name.capitalize}")
       to.inventory, self.inventory =
         inventory.partition { |item| item.kind_of?(material) }
     end

@@ -4,12 +4,14 @@ module ThreeLittlePigs
   module Story
     RSpec.describe FirstPigReceivesStraw do
       let(:story) { Story.so_far(until_chapter: FirstPigReceivesStraw) }
+      let(:straw_man) { story.straw_man }
+      let(:first_pig) { story.first_pig }
 
       before { FirstPigReceivesStraw.tell(story) }
 
       specify "the man gives the first little pig a bundle of straw" do
-        expect(story.straw_man.inventory).to be_empty
-        expect(story.first_pig.inventory).to eq(Bundle.of(:straw))
+        expect(straw_man.inventory).to be_empty
+        expect(first_pig.inventory).to eq(Bundle.of(:straw))
       end
     end
   end
