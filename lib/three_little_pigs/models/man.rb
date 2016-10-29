@@ -2,7 +2,7 @@ module ThreeLittlePigs
   class Man
     attr_accessor :inventory
 
-    def initialize(inventory:)
+    def initialize(inventory: [])
       @inventory = inventory
     end
 
