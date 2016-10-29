@@ -1,11 +1,7 @@
 module ThreeLittlePigs
   class Pig
-    extend Forwardable
-
     attr_reader :children, :house
-    attr_accessor :inventory
-
-    def_delegators :@inventory, :wealth, :wealth=
+    attr_accessor :inventory, :wealth
 
     def initialize(inventory: OpenStruct.new, children: [])
       @inventory = inventory
