@@ -7,7 +7,8 @@ module ThreeLittlePigs
     end
 
     def give(material, to:)
-      material = Kernel.const_get("ThreeLittlePigs::#{material.capitalize}")
+      material =
+        Module.const_get("#{Module.nesting.last}::#{material.capitalize}")
       to.inventory, self.inventory =
         inventory.partition { |item| item.kind_of?(material) }
     end
