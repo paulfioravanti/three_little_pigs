@@ -9,7 +9,7 @@ module ThreeLittlePigs
     end
 
     def house
-      @house ||= Story.house_belonging_to(self)
+      @house ||= House.belonging_to(self)
     end
 
     def send_away(pigs)

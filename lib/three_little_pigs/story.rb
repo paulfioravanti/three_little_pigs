@@ -4,8 +4,12 @@ require "pry"
 
 module ThreeLittlePigs
   module Story
+    extend SingleForwardable
+
     CHAPTERS = YAML.load_file(File.join(__dir__, "chapters.yml"))
     private_constant :CHAPTERS
+
+    def_delegator :story, :houses
 
     module_function
 
@@ -20,10 +24,6 @@ module ThreeLittlePigs
       chapters_so_far.each_with_object(story) do |the_chapter, the_story|
         const_get(the_chapter).tell(the_story)
       end
-    end
-
-    def house_belonging_to(owner)
-      story.houses.find {|house| house.owner == owner }
     end
 
     def story

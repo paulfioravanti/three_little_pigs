@@ -8,5 +8,9 @@ module ThreeLittlePigs
       @occupants = occupants
       @building_material = building_material
     end
+
+    def self.belonging_to(owner)
+      Story.houses.find { |house| house.owner == owner }
+    end
   end
 end
