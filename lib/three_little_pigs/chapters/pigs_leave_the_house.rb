@@ -1,5 +1,5 @@
 module ThreeLittlePigs
-  module Story
+  module Chapters
     module PigsLeaveTheHouse
       module_function
 

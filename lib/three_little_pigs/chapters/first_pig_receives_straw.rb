@@ -1,5 +1,5 @@
 module ThreeLittlePigs
-  module Story
+  module Chapters
     module FirstPigReceivesStraw
       module_function
 

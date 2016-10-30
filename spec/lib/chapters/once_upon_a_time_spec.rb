@@ -1,7 +1,7 @@
 require "spec_helper"
 
 module ThreeLittlePigs
-  module Story
+  module Chapters
     RSpec.describe OnceUponATime do
       let(:story) { Story.so_far }
       let(:mother_pig) { story.mother_pig }

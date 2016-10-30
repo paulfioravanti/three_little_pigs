@@ -1,7 +1,7 @@
 require "spec_helper"
 
 module ThreeLittlePigs
-  module Story
+  module Chapters
     RSpec.describe PigsLeaveTheHouse do
       let(:story) { Story.so_far(until_chapter: PigsLeaveTheHouse) }
 
