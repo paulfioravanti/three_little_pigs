@@ -10,8 +10,8 @@ module ThreeLittlePigs
       before { FirstPigReceivesStraw.tell(story) }
 
       specify "the man gives the first little pig a bundle of straw" do
-        expect(straw_man.inventory).to be_empty
         expect(first_pig.inventory).to eq(Bundle.of(:straw))
+        expect(straw_man.inventory).to be_empty
       end
     end
   end

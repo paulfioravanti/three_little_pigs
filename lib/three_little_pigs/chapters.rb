@@ -12,14 +12,9 @@ module ThreeLittlePigs
     end
 
     def upto(chapter_name)
-      chapter_name = demodulize(chapter_name)
+      chapter_name = Utilities.demodulize(chapter_name)
       chapters_upto(chapter_name).map { |chapter| const_get(chapter) }
     end
-
-    def demodulize(chapter)
-      chapter.to_s.split("::").last
-    end
-    private_class_method :demodulize
 
     def chapters_upto(chapter)
       CHAPTERS.slice(0...CHAPTERS.index(chapter))
