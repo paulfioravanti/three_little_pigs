@@ -9,7 +9,7 @@ module ThreeLittlePigs
       let(:second_pig) { story.second_pig }
       let(:third_pig) { story.third_pig }
 
-      before { OnceUponATime.tell(story) }
+      before { described_class.tell(story) }
 
       specify "there was a mother pig" do
         expect(mother_pig).to be_a(Pig)

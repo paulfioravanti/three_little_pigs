@@ -3,10 +3,10 @@ require "spec_helper"
 module ThreeLittlePigs
   module Chapters
     RSpec.describe FirstPigBuildsStrawHouse do
-      let(:story) { Story.so_far(until_chapter: FirstPigBuildsStrawHouse) }
+      let(:story) { Story.so_far(until_chapter: described_class) }
       let(:first_pig) { story.first_pig }
 
-      before { FirstPigBuildsStrawHouse.tell(story) }
+      before { described_class.tell(story) }
 
       specify "the first pig built his house of straw" do
         expect(first_pig.house).to be_a(House)
