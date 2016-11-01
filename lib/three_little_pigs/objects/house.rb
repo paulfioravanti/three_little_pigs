@@ -1,30 +1,32 @@
 module ThreeLittlePigs
   class House
-    attr_reader :owner, :made_of
+    attr_reader :owner, :building_material
     attr_accessor :occupants
-
-    def self.build(materials:, owner:, occupants:)
-      made_of = determine_primary_building_material(materials)
-      strength =
-        materials.reduce(0) { |acc, material| acc += material.strength }
-      new(owner: owner, occupants: occupants, made_of: made_of, strength: strength)
-    end
-
-    def self.determine_primary_building_material(materials)
-      primary_material = Utilities.primary_class_from(materials)
-      Utilities.demodulize(primary_material).downcase.to_sym
-    end
-    private_class_method :determine_primary_building_material
-
-    def initialize(owner:, occupants:, made_of: nil, strength: nil)
-      @owner = owner
-      @occupants = occupants
-      @made_of = made_of
-      @strength = strength
-    end
 
     def self.belonging_to(owner)
       Story.houses.find { |house| house.owner == owner }
+    end
+
+    def initialize(owner:, occupants:, building_materials: nil)
+      @owner = owner
+      @occupants = occupants
+      if building_materials
+        @building_material = initialize_building_material(building_materials)
+        @strength = initialize_strength(building_materials)
+      end
+    end
+
+    private
+
+    def initialize_building_material(materials)
+      # NOTE: Assumes that materials will always be of a
+      # single type, which in the story, they are.
+      primary_material = materials.first.class
+      Utilities.demodulize(primary_material).downcase.to_sym
+    end
+
+    def initialize_strength(materials)
+      materials.reduce(0) { |acc, material| acc += material.strength }
     end
   end
 end
