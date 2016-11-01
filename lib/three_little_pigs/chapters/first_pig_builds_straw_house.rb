@@ -7,7 +7,7 @@ module ThreeLittlePigs
         first_pig = story.first_pig
 
         story.houses <<
-          House.new(
+          House.build(
             building_materials: first_pig.inventory,
             owner: first_pig,
             occupants: [first_pig]

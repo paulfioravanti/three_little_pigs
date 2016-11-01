@@ -2,12 +2,8 @@ module ThreeLittlePigs
   module Bundle
     module_function
 
-    def of(material)
-      material = material.to_s.capitalize.tr("s", "")
-      Array.new(
-        10,
-        Module.const_get("#{Module.nesting.last}::#{material}").new
-      )
+    def of(building_material)
+      Array.new(10, BuildingMaterials.const_for(building_material).new)
     end
   end
 end
