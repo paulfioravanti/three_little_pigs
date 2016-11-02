@@ -1,5 +1,12 @@
 module ThreeLittlePigs
   module BuildingMaterials
+    BUILDING_MATERIAL_SYMBOLS = {
+      "straw" => :straw,
+      "stick" => :sticks,
+      "brick" => :bricks
+    }
+    private_constant :BUILDING_MATERIAL_SYMBOLS
+
     Straw = Struct.new(:strength) do
       def initialize(*)
         super
@@ -32,7 +39,8 @@ module ThreeLittlePigs
       # NOTE: Assumes that materials will always be of a
       # single type, which in the story, they are.
       primary_material = materials.first.class
-      Utilities.demodulize(primary_material).downcase.to_sym
+      primary_material_name = Utilities.demodulize(primary_material).downcase
+      BUILDING_MATERIAL_SYMBOLS[primary_material_name]
     end
 
     def combined_strength(materials)
