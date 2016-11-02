@@ -12,6 +12,7 @@ module ThreeLittlePigs
         expect(first_pig.house).to be_a(House)
         expect(first_pig.house.building_material).to eq(:straw)
         expect(first_pig.house.occupants).to eq([first_pig])
+        expect(first_pig.inventory).to be_empty
       end
     end
   end

@@ -6,4 +6,5 @@ module ThreeLittlePigs
       Array.new(10, BuildingMaterials.const_for(building_material).new)
     end
   end
+  Load = Bundle
 end

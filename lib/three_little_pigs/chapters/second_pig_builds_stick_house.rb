@@ -8,7 +8,7 @@ module ThreeLittlePigs
 
         story.houses <<
           House.build(
-            building_materials: second_pig.inventory,
+            building_materials: second_pig.use(:sticks),
             owner: second_pig,
             occupants: [second_pig]
           )
