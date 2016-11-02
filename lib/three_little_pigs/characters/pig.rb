@@ -9,7 +9,7 @@ module ThreeLittlePigs
     end
 
     def house
-      @house ||= House.belonging_to(self)
+      House.belonging_to(self)
     end
 
     def send_away(pigs)
@@ -21,6 +21,10 @@ module ThreeLittlePigs
       building_materials, self.inventory =
         inventory.partition { |item| item.kind_of?(building_material) }
       building_materials
+    end
+
+    def escape_to(house)
+      house.occupants << self
     end
   end
 end

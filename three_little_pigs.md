@@ -29,41 +29,47 @@
 8. And the third little pig built his house of bricks.
    "I'm not afraid of the Big Bad Wolf", he said.
 
+9. The next day, a wolf came along and saw the houses the little pigs
+   built, and decided to pay them a visit.
+
 [Picture?]
-The next day the wolf went to the straw house, and said
+The wolf went to the straw house, and said
 "Little pig, little pig, let me come in".
 The little pig replied "No, not by the hair of my chinny chin chin".
-To which the wolf replied "Then I'll huff, and I'll puff, and I'll
-blow your house in"
 
-9. And the wolf huffed and he puffed, and blew the house down.
-   And the first little pig ran to his brother's house of sticks.
+10a. To which the wolf replied "Then I'll huff, and I'll puff, and I'll
+     blow your house in"
+
+10b. And the wolf huffed and he puffed, and blew the house down.
+     And the first little pig ran to his brother's house of sticks.
 
 So, the wolf went to the stick house, and said
 "Little pigs, little pigs, let me come in".
 "No, not by the hair of our chinny chin chins", replied the pigs.
-"Then I'll huff, and I'll puff, and I'll blow your house in"
 
-10. So the wolf huffed and puffed, and blew the house down.
-    And the little pigs ran to their brother's house of bricks.
+11a. "Then I'll huff, and I'll puff, and I'll blow your house in"
+
+11b. So the wolf huffed and puffed, and blew the house down.
+     And the little pigs ran to their brother's house of bricks.
 
 So, the wolf went to the brick house, and said
 "Little pigs, little pigs, let me come in".
 "No, not by the hair of our chinny chin chins", replied the pigs.
-"Then I'll huff, and I'll puff, and I'll blow your house in"
 
-11. So the wolf huffed and puffed, and huffed and puffed, but he could not
-    blow the house down.
+12a. "Then I'll huff, and I'll puff, and I'll blow your house in"
 
-12. The wolf searched for a way into the house.  He tried the door and the
+12b. So the wolf huffed and puffed, and huffed and puffed, but he could not
+     blow the house down.
+
+13. The wolf searched for a way into the house.  He tried the door and the
     windows, but they were all closed.  But, he saw that the chimney was
     open, and jumped on the roof to climb down it.
 
-13. The three little pigs saw what the wolf was planning and put a big pot
+14. The three little pigs saw what the wolf was planning and put a big pot
     of water on the stove and made up a blazing fire.
 
-14. The wolf slid down the chimney into the pot of water, and was promptly
+15. The wolf slid down the chimney into the pot of water, and was promptly
     boiled up.
 
-15. "That's the end of the Big Bad Wolf", said one of the pigs, and they all
+16. "That's the end of the Big Bad Wolf", said one of the pigs, and they all
     lived happily ever after.
