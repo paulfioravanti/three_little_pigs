@@ -1,6 +1,6 @@
 module ThreeLittlePigs
   module Chapters
-    module WolfBlowsDownStrawHouse
+    module WolfAttacksStrawHouse
       module_function
 
       def tell(story)
