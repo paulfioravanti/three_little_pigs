@@ -10,21 +10,21 @@ module ThreeLittlePigs
     Straw = Struct.new(:strength) do
       def initialize(*)
         super
-        self.strength ||= 1
+        self.strength ||= 3
       end
     end
 
     Stick = Struct.new(:strength) do
       def initialize(*)
         super
-        self.strength ||= 5
+        self.strength ||= 6
       end
     end
 
     Brick = Struct.new(:strength) do
       def initialize(*)
         super
-        self.strength ||= 10
+        self.strength ||= 9
       end
     end
 
