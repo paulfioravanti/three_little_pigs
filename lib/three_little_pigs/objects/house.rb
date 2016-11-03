@@ -1,6 +1,6 @@
 module ThreeLittlePigs
   class House
-    MAX_CONTINUOUS_DAMAGE_HITS = 3
+    MAX_CONTINUOUS_DAMAGE_HITS = 2
     private_constant :MAX_CONTINUOUS_DAMAGE_HITS
 
     attr_reader :owner, :building_material

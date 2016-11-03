@@ -14,15 +14,12 @@ module ThreeLittlePigs
           receive(:huff).with(at: first_pigs_house).and_call_original
         allow(wolf).to \
           receive(:puff).with(at: first_pigs_house).and_call_original
-        allow(wolf).to \
-          receive(:blow).with(at: first_pigs_house).and_call_original
         described_class.tell(story)
       end
 
       specify "wolf huffed and puffed and blew the straw house down" do
         expect(wolf).to have_received(:huff).with(at: first_pigs_house)
         expect(wolf).to have_received(:puff).with(at: first_pigs_house)
-        expect(wolf).to have_received(:blow).with(at: first_pigs_house)
         expect(first_pig.house).to be nil
       end
 

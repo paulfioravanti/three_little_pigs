@@ -11,7 +11,6 @@ module ThreeLittlePigs
 
         wolf.huff(at: second_pig.house)
         wolf.puff(at: second_pig.house)
-        wolf.blow(at: second_pig.house)
 
         if second_pig.house.nil?
           first_pig.escape_to(third_pig.house)
