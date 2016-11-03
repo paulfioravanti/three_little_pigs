@@ -7,11 +7,11 @@ module ThreeLittlePigs
     BLOW_POWER = 40
     private_constant :BLOW_POWER
 
-    def huff(at:)
+    def blow(at:)
       power_level = self.class.const_get("#{__callee__.upcase}_POWER")
       at.inflict_damage(power_level)
     end
-    alias_method :puff, :huff
-    alias_method :blow, :huff
+    alias_method :huff, :blow
+    alias_method :puff, :blow
   end
 end
