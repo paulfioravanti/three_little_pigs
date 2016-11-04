@@ -1,6 +1,6 @@
 module ThreeLittlePigs
   class House
-    attr_reader :owner, :building_material
+    attr_reader :owner, :building_material, :door, :windows, :chimney
     attr_accessor :occupants, :strength, :damage
 
     def self.belonging_to(owner)
@@ -21,6 +21,9 @@ module ThreeLittlePigs
       @building_material = options[:building_material]
       @strength = options[:strength]
       @damage = 0
+      @door = Door.new
+      @windows = Windows.new
+      @chimney = Chimney.new
     end
 
     def inflict_damage(damage_level)

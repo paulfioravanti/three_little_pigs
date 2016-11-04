@@ -26,5 +26,9 @@ module ThreeLittlePigs
     def escape_to(house)
       house.occupants << self
     end
+
+    def close(house_part, on:)
+      on.public_send(house_part).status = :closed
+    end
   end
 end
