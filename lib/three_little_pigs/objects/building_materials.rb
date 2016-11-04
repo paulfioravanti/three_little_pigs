@@ -24,7 +24,7 @@ module ThreeLittlePigs
     Brick = Struct.new(:strength) do
       def initialize(*)
         super
-        self.strength ||= 4
+        self.strength ||= 6
       end
     end
 
