@@ -15,9 +15,17 @@ module ThreeLittlePigs
         status == :closed
       end
     end
-
+    Chimney = Part
     Door = Part
     Windows = Part
-    Chimney = Part
+
+    class Fireplace
+      attr_reader :chimney, :hearth
+
+      def initialize
+        @chimney = Chimney.new
+        @hearth = []
+      end
+    end
   end
 end

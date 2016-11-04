@@ -1,7 +1,11 @@
 module ThreeLittlePigs
   class House
+    extend Forwardable
+
     attr_reader :owner, :building_material, :door, :windows, :chimney
     attr_accessor :occupants, :strength, :damage
+
+    def_delegator :@fireplace, :chimney
 
     def self.belonging_to(owner)
       Story.houses.find { |house| house.owner == owner }
@@ -23,7 +27,7 @@ module ThreeLittlePigs
       @damage = 0
       @door = Door.new
       @windows = Windows.new
-      @chimney = Chimney.new
+      @fireplace = Fireplace.new
     end
 
     def inflict_damage(damage_level)
