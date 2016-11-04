@@ -8,19 +8,17 @@ module ThreeLittlePigs
       let(:first_pig) { story.first_pig }
       let(:second_pig) { story.second_pig }
       let(:third_pig) { story.third_pig }
-      let(:second_pigs_house) { second_pig.house }
+      let(:stick_house) { second_pig.house }
 
       before do
-        allow(wolf).to \
-          receive(:huff).with(at: second_pigs_house).and_call_original
-        allow(wolf).to \
-          receive(:puff).with(at: second_pigs_house).and_call_original
+        allow(wolf).to receive(:huff).with(at: stick_house).and_call_original
+        allow(wolf).to receive(:puff).with(at: stick_house).and_call_original
         described_class.tell(story)
       end
 
       specify "wolf huffed and puffed and blew the stick house down" do
-        expect(wolf).to have_received(:huff).with(at: second_pigs_house)
-        expect(wolf).to have_received(:puff).with(at: second_pigs_house)
+        expect(wolf).to have_received(:huff).with(at: stick_house)
+        expect(wolf).to have_received(:puff).with(at: stick_house)
         expect(second_pig.house).to be nil
       end
 
