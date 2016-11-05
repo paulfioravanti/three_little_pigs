@@ -1,7 +1,11 @@
 module ThreeLittlePigs
   class House
     class Fireplace
+      extend Forwardable
+
       attr_reader :chimney, :hearth
+
+      def_delegator :@hearth, :<<
 
       def initialize
         @chimney = Chimney.new

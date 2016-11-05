@@ -9,7 +9,7 @@ module ThreeLittlePigs
       @temperature = Utilities::ROOM_TEMPERATURE
     end
 
-    def boil
+    def raise_temperature
       self.temperature = BOILING_POINT
     end
   end

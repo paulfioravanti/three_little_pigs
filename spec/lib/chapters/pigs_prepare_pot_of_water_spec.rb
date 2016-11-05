@@ -7,7 +7,6 @@ module ThreeLittlePigs
       let(:pot) { story.pot }
       let(:water) { pot.water }
       let(:fireplace) { story.third_pig.house.fireplace }
-      let(:fireplace_hearth) { fireplace.hearth.contents }
       let(:fire) { fireplace.fire }
       let(:boiling_point) { 100 } # °C
 
@@ -17,7 +16,7 @@ module ThreeLittlePigs
 
       specify "the pigs hung a pot of water on the fireplace and made a fire" do
         expect(pot.contents).to eq([water])
-        expect(fireplace_hearth).to match_array([pot, fire])
+        expect(fireplace.hearth.contents).to eq([pot, fire])
         expect(water.temperature).to eq(boiling_point)
       end
     end

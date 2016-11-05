@@ -5,14 +5,14 @@ module ThreeLittlePigs
 
       def tell(story)
         third_pig = story.third_pig
-        brick_house = third_pig.house
-
+        fireplace = third_pig.house.fireplace
         pot = story.pot = Pot.new
         water = Water.new
         fire = Fire.new
-        third_pig.put(pot, into: brick_house.hearth)
-        third_pig.put(water, into: pot.contents)
-        third_pig.put(fire, into: brick_house.hearth)
+
+        third_pig.put(pot, into: fireplace)
+        third_pig.put(water, into: pot)
+        third_pig.put(fire, into: fireplace)
       end
     end
   end
