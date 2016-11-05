@@ -2,10 +2,10 @@ module ThreeLittlePigs
   class House
     extend Forwardable
 
-    attr_reader :owner, :building_material, :door, :windows, :chimney
+    attr_reader :owner, :building_material, :door, :windows, :fireplace
     attr_accessor :occupants, :strength, :damage
 
-    def_delegator :@fireplace, :chimney
+    def_delegators :@fireplace, :chimney, :hearth
 
     def self.belonging_to(owner)
       Story.houses.find { |house| house.owner == owner }

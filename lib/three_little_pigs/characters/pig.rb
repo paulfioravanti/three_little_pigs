@@ -30,5 +30,9 @@ module ThreeLittlePigs
     def close(house_part, on:)
       on.public_send(house_part).status = :closed
     end
+
+    def put(item, into:)
+      into << item
+    end
   end
 end

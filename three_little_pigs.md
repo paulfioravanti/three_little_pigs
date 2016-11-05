@@ -66,7 +66,7 @@ So, the wolf went to the brick house, and said
     open, and jumped on the roof to climb down it.
 
 18. The three little pigs saw what the wolf was planning and hung a big pot
-    of water on the fireplace and made up a blazing fire.
+    of water on the fireplace hearth and made up a blazing fire.
 
 19. The wolf slid down the chimney into the pot of water, and was promptly
     boiled up. "That's the end of the Big Bad Wolf", said one of the pigs,
