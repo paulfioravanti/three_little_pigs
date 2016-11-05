@@ -1,6 +1,6 @@
 module ThreeLittlePigs
   module BuildingMaterials
-    Brick = Struct.new(:strength) do
+    Bricks = Struct.new(:strength) do
       def initialize(*)
         super
         self.strength ||= 6
