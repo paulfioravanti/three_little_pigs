@@ -1,19 +1,22 @@
 module ThreeLittlePigs
   class House
     class Fireplace
-      extend Forwardable
-
-      attr_reader :chimney, :hearth
-
-      def_delegator :@hearth, :<<
+      attr_reader :chimney
+      attr_accessor :hearth, :lit
 
       def initialize
         @chimney = Chimney.new
-        @hearth = Hearth.new
+        @hearth = nil
+        @lit = false
       end
 
-      def fire
-        hearth.find { |item| item.kind_of?(Fire) }
+      def light_fire
+        self.lit = true
+        hearth.each(&:raise_temperature)
+      end
+
+      def lit?
+        lit
       end
     end
   end
