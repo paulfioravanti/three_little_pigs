@@ -1,7 +1,5 @@
 module ThreeLittlePigs
   class Pot
-    ROOM_TEMPERATURE = 20 # °C
-    private_constant :ROOM_TEMPERATURE
     TEMPERATURE_TO_BOIL_WATER = 110 # °C
     private_constant :TEMPERATURE_TO_BOIL_WATER
 
@@ -9,7 +7,7 @@ module ThreeLittlePigs
 
     def initialize
       @contents = []
-      @temperature = ROOM_TEMPERATURE
+      @temperature = Utilities::ROOM_TEMPERATURE
     end
 
     def water
