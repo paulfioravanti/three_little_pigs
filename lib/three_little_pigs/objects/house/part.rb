@@ -15,8 +15,5 @@ module ThreeLittlePigs
         status == :closed
       end
     end
-    Door = Part
-    Windows = Part
-    Chimney = Part
   end
 end

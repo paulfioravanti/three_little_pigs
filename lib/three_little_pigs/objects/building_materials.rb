@@ -7,27 +7,6 @@ module ThreeLittlePigs
     }
     private_constant :BUILDING_MATERIAL_SYMBOLS
 
-    Straw = Struct.new(:strength) do
-      def initialize(*)
-        super
-        self.strength ||= 1
-      end
-    end
-
-    Stick = Struct.new(:strength) do
-      def initialize(*)
-        super
-        self.strength ||= 2
-      end
-    end
-
-    Brick = Struct.new(:strength) do
-      def initialize(*)
-        super
-        self.strength ||= 6
-      end
-    end
-
     module_function
 
     def const_for(material_name)
