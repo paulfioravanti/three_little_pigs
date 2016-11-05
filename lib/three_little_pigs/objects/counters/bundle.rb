@@ -12,5 +12,4 @@ module ThreeLittlePigs
       )
     end
   end
-  Load = Bundle
 end
