@@ -21,6 +21,7 @@ module ThreeLittlePigs
               occupants: [mother_pig, *mother_pig.children]
             )
           ]
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

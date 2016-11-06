@@ -5,6 +5,7 @@ module ThreeLittlePigs
 
       def tell(story)
         story.straw_man.give(:straw, to: story.first_pig)
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

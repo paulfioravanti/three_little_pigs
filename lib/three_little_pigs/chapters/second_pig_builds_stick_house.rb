@@ -11,6 +11,7 @@ module ThreeLittlePigs
             building_materials: second_pig.use(:sticks),
             owner: second_pig
           )
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

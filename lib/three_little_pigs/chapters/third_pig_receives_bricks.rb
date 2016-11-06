@@ -5,6 +5,7 @@ module ThreeLittlePigs
 
       def tell(story)
         story.brick_man.give(:bricks, to: story.third_pig)
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

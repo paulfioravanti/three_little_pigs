@@ -10,6 +10,7 @@ module ThreeLittlePigs
         fireplace.hearth = pot
         pot << Water.new
         fireplace.light_fire
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

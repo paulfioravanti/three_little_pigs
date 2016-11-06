@@ -16,6 +16,7 @@ module ThreeLittlePigs
           first_pig.escape_to(third_pig.house)
           second_pig.escape_to(third_pig.house)
         end
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

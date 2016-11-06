@@ -12,7 +12,7 @@ module ThreeLittlePigs
 
     def tell(chapters = Chapters.all)
       chapters.each_with_object(story) do |(chapter, text), story|
-        puts text
+        puts green(text)
         chapter.tell(story)
       end
     end
@@ -29,5 +29,10 @@ module ThreeLittlePigs
       @story ||= OpenStruct.new
     end
     private_class_method :story
+
+    def green(text)
+      "\e[32m#{text}\e[0m"
+    end
+    private_class_method :green
   end
 end

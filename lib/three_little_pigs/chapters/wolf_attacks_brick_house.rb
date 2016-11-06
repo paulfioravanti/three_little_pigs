@@ -13,6 +13,7 @@ module ThreeLittlePigs
           wolf.puff(at: third_pig.house)
           tries -= 1
         end
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

@@ -10,6 +10,7 @@ module ThreeLittlePigs
         if mother_pig.wealth < Wealth.level(:medium)
           mother_pig.send_away(mother_pig.children)
         end
+        binding.pry if ENV["DEBUG"]
       end
     end
   end

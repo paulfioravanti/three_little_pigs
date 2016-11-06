@@ -8,6 +8,7 @@ module ThreeLittlePigs
 
         brick_house.door.close
         brick_house.windows.close
+        binding.pry if ENV["DEBUG"]
       end
     end
   end
