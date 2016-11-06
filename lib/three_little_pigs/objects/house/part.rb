@@ -11,6 +11,10 @@ module ThreeLittlePigs
         status == :open
       end
 
+      def close
+        self.status = :closed
+      end
+
       def closed?
         status == :closed
       end

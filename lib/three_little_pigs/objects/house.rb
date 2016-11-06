@@ -19,7 +19,7 @@ module ThreeLittlePigs
       new(options)
     end
 
-    def initialize(owner:, occupants:, **options)
+    def initialize(owner:, occupants: [owner], **options)
       @owner = owner
       @occupants = occupants
       @building_material = options[:building_material]

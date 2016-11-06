@@ -20,8 +20,7 @@ module ThreeLittlePigs
         expect(second_pig).to be_a(Pig)
         expect(third_pig).to be_a(Pig)
 
-        expect(mother_pig.children).to \
-          eq([first_pig, second_pig, third_pig])
+        expect(mother_pig.children).to eq([first_pig, second_pig, third_pig])
       end
 
       specify "the pigs lived together in the mother's house" do

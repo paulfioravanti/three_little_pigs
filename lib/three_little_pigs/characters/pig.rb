@@ -3,7 +3,7 @@ module ThreeLittlePigs
     attr_reader :children, :house, :slug
     attr_accessor :inventory, :wealth
 
-    def initialize(slug:, inventory: OpenStruct.new, children: [])
+    def initialize(slug:, inventory: [], children: [])
       @slug = slug
       @inventory = inventory
       @children = children
@@ -24,12 +24,12 @@ module ThreeLittlePigs
       building_materials
     end
 
-    def escape_to(house)
-      house.occupants << self
+    def house_blown_down?
+      house.nil?
     end
 
-    def close(house_part, on:)
-      on.public_send(house_part).status = :closed
+    def escape_to(house)
+      house.occupants << self
     end
   end
 end

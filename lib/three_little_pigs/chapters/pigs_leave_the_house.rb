@@ -4,11 +4,11 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        mother = story.mother_pig
-        mother.wealth = Wealth.level(:low)
+        mother_pig = story.mother_pig
+        mother_pig.wealth = Wealth.level(:low)
 
-        if mother.wealth < Wealth.level(:medium)
-          mother.send_away(mother.children)
+        if mother_pig.wealth < Wealth.level(:medium)
+          mother_pig.send_away(mother_pig.children)
         end
       end
     end

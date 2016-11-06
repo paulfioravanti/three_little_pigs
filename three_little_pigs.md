@@ -1,3 +1,8 @@
+This story takes place when pigs spoke rhyme
+And monkeys chewed tobacco,
+And hens took snuff to make them tough,
+And ducks went quack, quack, quack, O!
+
 1. Once upon a time, there was a mother pig.
    The mother pig had three little pigs.
    And the pigs all lived together in the mother's house.
@@ -43,6 +48,7 @@ The little pig replied "No, not by the hair of my chinny chin chin".
 13b. And the wolf huffed and he puffed, and blew the house down.
      And the first little pig ran to his brother's house of sticks.
 
+[Picture?]
 So, the wolf went to the stick house, and said
 "Little pigs, little pigs, let me come in".
 "No, not by the hair of our chinny chin chins", replied the pigs.
@@ -52,6 +58,7 @@ So, the wolf went to the stick house, and said
 14b. So the wolf huffed and puffed, and blew the house down.
      And the little pigs ran to their brother's house of bricks.
 
+[Picture?]
 So, the wolf went to the brick house, and said
 "Little pigs, little pigs, let me come in".
 "No, not by the hair of our chinny chin chins", replied the pigs.

@@ -6,8 +6,8 @@ module ThreeLittlePigs
       def tell(story)
         brick_house = story.third_pig.house
 
-        story.first_pig.close(:windows, on: brick_house)
-        story.second_pig.close(:door, on: brick_house)
+        brick_house.door.close
+        brick_house.windows.close
       end
     end
   end
