@@ -1,8 +1,10 @@
 module ThreeLittlePigs
   class Man
+    attr_reader :slug
     attr_accessor :inventory
 
-    def initialize(inventory: [])
+    def initialize(slug:, inventory: [])
+      @slug = slug
       @inventory = inventory
     end
 

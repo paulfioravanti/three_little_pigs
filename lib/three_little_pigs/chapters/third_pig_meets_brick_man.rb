@@ -4,7 +4,8 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        story.brick_man = Man.new(inventory: Load.of(:bricks))
+        story.brick_man =
+          Man.new(slug: "brick_man", inventory: Load.of(:bricks))
       end
     end
   end

@@ -5,10 +5,20 @@ module ThreeLittlePigs
     PUFF_POWER = 20
     private_constant :PUFF_POWER
 
+    attr_reader :slug
+
+    def initialize(slug:)
+      @slug = slug
+    end
+
     def huff(at:)
       power_level = self.class.const_get("#{__callee__.upcase}_POWER")
       at.inflict_damage(power_level)
     end
     alias_method :puff, :huff
+
+    def enter(location)
+      location << self
+    end
   end
 end

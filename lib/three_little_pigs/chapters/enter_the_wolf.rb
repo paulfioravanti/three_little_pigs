@@ -4,7 +4,7 @@ module ThreeLittlePigs
       module_function
 
       def tell(story)
-        story.wolf = Wolf.new
+        story.wolf = Wolf.new(slug: "wolf")
       end
     end
   end

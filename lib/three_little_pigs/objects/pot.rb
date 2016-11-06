@@ -4,7 +4,7 @@ module ThreeLittlePigs
 
     attr_reader :contents
 
-    def_delegators :@contents, :<<, :each
+    def_delegators :@contents, :each
 
     def initialize
       @contents = []
@@ -12,6 +12,13 @@ module ThreeLittlePigs
 
     def water
       contents.find { |item| item.kind_of?(Water) }
+    end
+
+    def <<(object)
+      contents << object
+      if water&.boiling?
+        Story.kill(contents.delete(object))
+      end
     end
   end
 end

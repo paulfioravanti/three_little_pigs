@@ -21,6 +21,10 @@ module ThreeLittlePigs
       end
     end
 
+    def kill(character)
+      story.public_send("#{character.slug}=", nil)
+    end
+
     def story
       @story ||= OpenStruct.new
     end

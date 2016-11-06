@@ -1,9 +1,10 @@
 module ThreeLittlePigs
   class Pig
-    attr_reader :children, :house
+    attr_reader :children, :house, :slug
     attr_accessor :inventory, :wealth
 
-    def initialize(inventory: OpenStruct.new, children: [])
+    def initialize(slug:, inventory: OpenStruct.new, children: [])
+      @slug = slug
       @inventory = inventory
       @children = children
     end

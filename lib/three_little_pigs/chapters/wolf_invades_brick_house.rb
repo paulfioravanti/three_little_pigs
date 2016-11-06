@@ -1,13 +1,13 @@
 module ThreeLittlePigs
   module Chapters
-    module WolfFallsIntoBoilingWater
+    module WolfInvadesBrickHouse
       module_function
 
       def tell(story)
         wolf = story.wolf
         chimney = story.third_pig.house.chimney
 
-        wolf.climb_into(chimney)
+        wolf.enter(chimney)
       end
     end
   end
