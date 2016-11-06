@@ -10,15 +10,15 @@ module ThreeLittlePigs
 
     module_function
 
-    def tell
-      Chapters.all.each { |chapter| chapter.tell(story) }
-      story
+    def tell(chapters = Chapters.all)
+      chapters.each_with_object(story) do |(chapter, text), story|
+        puts text
+        chapter.tell(story)
+      end
     end
 
     def so_far(until_chapter: Chapters::OnceUponATime)
-      Chapters.upto(until_chapter).each_with_object(story) do |chapter, story|
-        chapter.tell(story)
-      end
+      tell(Chapters.upto(until_chapter))
     end
 
     def kill(character)

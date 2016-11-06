@@ -8,12 +8,17 @@ module ThreeLittlePigs
     module_function
 
     def all
-      upto(CHAPTERS.last)
+      get_consts
     end
 
-    def upto(chapter_name)
+    def upto((chapter_name, _chapter_text))
       chapter_name = Utilities.demodulize(chapter_name)
-      chapters_upto(chapter_name).map { |chapter| const_get(chapter) }
+      row = CHAPTERS.find {|array| array.first == chapter_name }
+      get_consts(chapters_upto(row))
+    end
+
+    def get_consts(chapters = CHAPTERS)
+      chapters.map { |name, content| [const_get(name), content] }
     end
 
     def chapters_upto(chapter)
