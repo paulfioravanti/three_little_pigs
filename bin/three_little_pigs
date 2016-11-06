@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require_relative File.expand_path("../lib/three_little_pigs", __dir__)
+ThreeLittlePigs.tell_story
