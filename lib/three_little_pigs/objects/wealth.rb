@@ -4,9 +4,7 @@ module ThreeLittlePigs
 
     def level(level)
       case level
-      when :low then 1
-      when :medium then 2
-      when :high then 3
+      when :enough then 1
       else 0
       end
     end

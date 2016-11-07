@@ -7,8 +7,8 @@ And ducks went quack, quack, quack, O!
    The mother pig had three little pigs.
    And the pigs all lived together in the mother's house.
 
-2. The mother pig did not have much money.  So, she sent the three little pigs
-   away to seek their fortune.
+2. As the mother pig did not have enough to keep them,
+   she sent the three little pigs away to seek their fortune.
 
 3. The first little pig met a man carrying a bundle of straw.
 

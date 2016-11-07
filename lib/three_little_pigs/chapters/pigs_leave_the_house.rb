@@ -5,9 +5,9 @@ module ThreeLittlePigs
 
       def tell(story)
         mother_pig = story.mother_pig
-        mother_pig.wealth = Wealth.level(:low)
+        mother_pig.wealth = Wealth.level(:not_enough)
 
-        if mother_pig.wealth < Wealth.level(:medium)
+        if mother_pig.wealth < Wealth.level(:enough)
           mother_pig.send_away(mother_pig.children)
         end
         binding.pry if ENV["DEBUG"]
