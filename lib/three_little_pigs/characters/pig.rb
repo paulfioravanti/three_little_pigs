@@ -1,6 +1,6 @@
 module ThreeLittlePigs
   class Pig
-    attr_reader :children, :house, :slug
+    attr_reader :children, :slug
     attr_accessor :inventory, :wealth
 
     def initialize(slug:, inventory: [], children: [])
