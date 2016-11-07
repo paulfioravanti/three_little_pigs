@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "guard-rspec", "~> 4.6"
   spec.add_development_dependency "fuubar", "~> 2.2.0"
+  spec.add_development_dependency "minitest-reporters", "~> 1.1"
   spec.add_development_dependency "pry-byebug", "~> 3.1"
   spec.add_development_dependency "simplecov", "~> 0.11"
 end
