@@ -6,8 +6,6 @@ The version of the story presented here is an adaptation of
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
 shortened down, and changed to fit the flow of a computer program.
 
-The story
-
 ## Installation :pig_nose:
 
     $ git clone https://github.com/paulfioravanti/three_little_pigs.git
@@ -16,7 +14,7 @@ The story
 
 ## Usage :pig2:
 
-Run the app, simply printing the story contents to screen:
+Run the app, simply printing the story to screen:
 
     $ bin/three_little_pigs
 
