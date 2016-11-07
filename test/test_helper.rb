@@ -1,4 +1,4 @@
-# require "simplecov"
+require "simplecov"
 require "three_little_pigs"
 require "minitest/autorun"
 require "minitest/mock"
