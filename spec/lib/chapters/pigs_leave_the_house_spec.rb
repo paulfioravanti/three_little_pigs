@@ -8,7 +8,7 @@ module ThreeLittlePigs
 
       before { described_class.tell(story) }
 
-      specify "the mother pig did not have much money" do
+      specify "the mother pig did not have enough to keep her children" do
         expect(mother_pig.wealth).to eq(Wealth.level(:not_enough))
       end
 
