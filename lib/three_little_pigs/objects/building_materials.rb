@@ -14,7 +14,9 @@ module ThreeLittlePigs
     end
 
     def combined_strength(materials)
-      materials.reduce(0) { |acc, material| acc += material.strength }
+      materials.reduce(0) do |total_strength, material|
+        total_strength + material.strength
+      end
     end
   end
 end
