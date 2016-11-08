@@ -16,13 +16,16 @@ module ThreeLittlePigs
 
       def test_wolf_huffed_and_puffed_and_blew_the_straw_house_down
         # NOTE: Couldn't figure out how to do the mocking in Minitest
-        # for huff and puff due to getting `nil` values for the stick house
+        # for huff and puff due to getting `nil` values for the straw house.
+        # There doesn't seem to be a way of doing a `.and_call_original`
+        # where the value that gets mocked has a chance of becoming `nil`.
         assert_nil(first_pig.house)
       end
 
       def test_the_first_little_pig_ran_to_his_brothers_house_of_sticks
-        assert_includes(second_pig.house.occupants, first_pig)
-        assert_includes(second_pig.house.occupants, second_pig)
+        stick_house = second_pig.house
+        assert_includes(stick_house.occupants, first_pig)
+        assert_includes(stick_house.occupants, second_pig)
       end
     end
   end
