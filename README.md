@@ -1,6 +1,9 @@
 # The Story of the Three Little Pigs :pig: :pig: :pig:
 
 [![Build Status](https://travis-ci.org/paulfioravanti/three_little_pigs.svg?branch=master)](https://travis-ci.org/paulfioravanti/three_little_pigs)
+[![Code Climate](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/gpa.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs)
+[![Test Coverage](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/coverage.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs/coverage)
+[![Issue Count](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/issue_count.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs)
 
 The version of the story presented here is an adaptation of
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
