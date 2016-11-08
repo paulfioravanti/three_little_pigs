@@ -8,26 +8,93 @@ engines:
       - javascript
       - python
       - php
+    exclude_fingerprints:
+    ### first_pig_builds_straw_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 101e2db3a3b3576d13d34c4435f0c8eb
+    ### second_pig_builds_stick_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 2babaa2eded6a6cf4aba12e09f9b8d7c
+    ### third_pig_builds_brick_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 8557670f39c0a0ed015a8985bfeb3f79
+    ### first_pig_meets_straw_man.rb
+    # Similar code found in 2 other locations (mass = 22)
+    - 02147f2a241cdba3ff430af52b8d27d2
+    ### second_pig_meets_stick_man.rb
+    # Similar code found in 2 other locations (mass = 22)
+    - 38ffcb8e6eb4f208a858eecdba436ff8
+    ### third_pig_meets_brick_man.rb
+    # Similar code found in 2 other locations (mass = 22)
+    - 7af778773e5cd45099948c92a27016a7
+    ### first_pig_receives_straw.rb
+    # Similar code found in 2 other locations (mass = 19)
+    - 07eee8c44c2f45359e0cbe44080b1aa7
+    ### second_pig_receives_sticks.rb
+    # Similar code found in 2 other locations (mass = 19)
+    - ddab2ec0e77cc027b61ee419f80641d8
+    ### third_pig_receives_bricks.rb
+    # Similar code found in 2 other locations (mass = 19)
+    - 8bbb32e537027009f305c7eebe4b0402
   fixme:
     enabled: true
   rubocop:
     enabled: true
     exclude_fingerprints:
     ### first_pig_builds_straw_house.rb
-    # Similar code found in 2 other locations (mass = 26)
-    - 101e2db3a3b3576d13d34c4435f0c8eb
     # Remove debugger entry point binding.pry.
     - 8b32a5ccdd8ac730fecbfc740518e642
     ### second_pig_builds_stick_house.rb
-    # Similar code found in 2 other locations (mass = 26)
-    - 2babaa2eded6a6cf4aba12e09f9b8d7c
     # Remove debugger entry point binding.pry.
     - fffe52e48837b76b1e7107e84d172941
     ### third_pig_builds_brick_house.rb
-    # Similar code found in 2 other locations (mass = 26)
-    - 8557670f39c0a0ed015a8985bfeb3f79
     # Remove debugger entry point binding.pry.
     - d586c3ec9af00a590491535333959c77
+    ### enter_the_wolf.rb
+    # Remove debugger entry point binding.pry.
+    - 5256a213717177d876aa8349316ea1ce
+    ### first_pig_meets_straw_man.rb
+    # Remove debugger entry point binding.pry.
+    - dab0697b56c9217a8427607dd3c1968e
+    ### first_pig_receives_straw.rb
+    # Remove debugger entry point binding.pry.
+    - 4d2c74ec8b94008e17035ebb3145f05f
+    ### once_upon_a_time.rb
+    # Remove debugger entry point binding.pry.
+    - bb81caf09817be476224374af1a64677
+    ### pigs_close_up_brick_house.rb
+    # Remove debugger entry point binding.pry.
+    - 71a2a365db974653ec14120603a7aad9
+    ### pigs_leave_the_house.rb
+    # Remove debugger entry point binding.pry.
+    - 3b03ae9083ab48fb203144bbc96e35f8
+    ### pigs_prepare_pot_of_water.rb
+    # Remove debugger entry point binding.pry.
+    - b263d55d1867d0182673f6f0e3db51d4
+    ### second_pig_meets_stick_man.rb
+    # Remove debugger entry point binding.pry.
+    - deb31a24b8bed8c338ea2933a432595c
+    ### second_pig_receives_sticks.rb
+    # Remove debugger entry point binding.pry.
+    - 89178561078deaccfb31142782ee0e65
+    ### third_pig_meets_brick_man.rb
+    # Remove debugger entry point binding.pry.
+    - 0710f96802ff34f48d65dde7b569ddb3
+    ### third_pig_receives_bricks.rb
+    # Remove debugger entry point binding.pry.
+    - e4cbcb4020b44a82fc149ab097aea430
+    ### wolf_attacks_brick_house.rb
+    # Remove debugger entry point binding.pry.
+    - 88d506e28969b94107acb636f25d173f
+    ### wolf_attacks_stick_house.rb
+    # Remove debugger entry point binding.pry.
+    - 49acb4745fc0f4c5fa970f170969f0cf
+    ### wolf_attacks_straw_house.rb
+    # Remove debugger entry point binding.pry.
+    - 05311d85c714a8931db5ac4373624560
+    ### wolf_invades_brick_house.rb
+    # Remove debugger entry point binding.pry.
+    - b1dc97b0741c90eeb26c121b76be494a
 ratings:
   paths:
   - "**.inc"
