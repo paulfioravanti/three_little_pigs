@@ -12,6 +12,22 @@ engines:
     enabled: true
   rubocop:
     enabled: true
+    exclude_fingerprints:
+    ### first_pig_builds_straw_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 101e2db3a3b3576d13d34c4435f0c8eb
+    # Remove debugger entry point binding.pry.
+    - 8b32a5ccdd8ac730fecbfc740518e642
+    ### second_pig_builds_stick_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 2babaa2eded6a6cf4aba12e09f9b8d7c
+    # Remove debugger entry point binding.pry.
+    - fffe52e48837b76b1e7107e84d172941
+    ### third_pig_builds_brick_house.rb
+    # Similar code found in 2 other locations (mass = 26)
+    - 8557670f39c0a0ed015a8985bfeb3f79
+    # Remove debugger entry point binding.pry.
+    - d586c3ec9af00a590491535333959c77
 ratings:
   paths:
   - "**.inc"
