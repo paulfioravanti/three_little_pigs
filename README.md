@@ -1,6 +1,4 @@
-# The Story of the Three Little Pigs :pig:
-
-Written in the Ruby programming language, and tested using RSpec.
+# The Story of the Three Little Pigs :pig: :pig: :pig:
 
 The version of the story presented here is an adaptation of
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
@@ -23,19 +21,26 @@ of every "chapter" so you can inspect the state of the "story":
 
     $ DEBUG=true bin/three_little_pigs
 
-Run the tests/specs:
+## Testing :wolf:
 
-    $ rake
+Tests for this story are written in both RSpec specs and Minitest tests.
+
+Choose to run the tests, the specs, or both:
+
+    $ rake test
+    $ rake spec
+    $ rake # runs both
 
 View test coverage report:
 
     $ open coverage/index.html
 
-## License
+## License :house:
 
-This story is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+This story is available as open source under the terms of the
+[MIT License](http://opensource.org/licenses/MIT).
 
-## Social
+## Social :sparkles:
 
 <a href="http://stackoverflow.com/users/567863/paul-fioravanti">
   <img src="http://stackoverflow.com/users/flair/567863.png" width="208" height="58" alt="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
