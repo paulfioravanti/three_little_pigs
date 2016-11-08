@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   # 'allowed_push_host' to allow pushing to a single host or delete this
   # section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters", "~> 1.1"
   spec.add_development_dependency "pry-byebug", "~> 3.1"
   spec.add_development_dependency "simplecov", "~> 0.11"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 0.5"
 end
