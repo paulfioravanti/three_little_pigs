@@ -10,4 +10,3 @@ addons:
     repo_token: $CODECLIMATE_REPO_TOKEN
 script:
 - bin/rake
-- bundle exec codeclimate-test-reporter
