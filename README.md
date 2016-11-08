@@ -1,5 +1,7 @@
 # The Story of the Three Little Pigs :pig: :pig: :pig:
 
+[![Build Status](https://travis-ci.org/paulfioravanti/three_little_pigs.svg?branch=master)](https://travis-ci.org/paulfioravanti/three_little_pigs)
+
 The version of the story presented here is an adaptation of
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
 shortened down, and changed to fit the flow of a computer program.
