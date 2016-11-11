@@ -95,6 +95,9 @@ engines:
     ### wolf_invades_brick_house.rb
     # Remove debugger entry point binding.pry.
     - b1dc97b0741c90eeb26c121b76be494a
+    ### pigs_live_with_their_mother.rb
+    # Remove debugger entry point binding.pry.
+    - b7709d31587e9ef3df9cfcd2efe6382c
 ratings:
   paths:
   - "**.inc"
