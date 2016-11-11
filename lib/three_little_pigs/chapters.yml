@@ -8,9 +8,12 @@
 
     The Story of the Three Little Pigs
 
-    Once upon a time, there was a mother pig.
-    The mother pig had three little pigs.
-    And the pigs all lived together in the mother's house.
+    Once upon a time, there were three little pigs.
+-
+  - PigsLiveWithTheirMother
+  - |+
+    The three little pigs had a mother, and they lived
+    with together with her in her small house.
 -
   - PigsLeaveTheHouse
   - |+
