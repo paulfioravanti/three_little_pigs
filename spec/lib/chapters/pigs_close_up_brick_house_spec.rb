@@ -6,9 +6,7 @@ module ThreeLittlePigs
       let(:story) { Story.so_far(until_chapter: described_class) }
       let(:brick_house) { story.third_pig.house }
 
-      before do
-        described_class.tell(story)
-      end
+      before { described_class.tell(story) }
 
       specify "the door and windows were closed, but the chimney was open" do
         expect(brick_house.door).to be_closed

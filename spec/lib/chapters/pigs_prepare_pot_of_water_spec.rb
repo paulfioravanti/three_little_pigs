@@ -9,9 +9,7 @@ module ThreeLittlePigs
       let(:fireplace) { story.third_pig.house.fireplace }
       let(:boiling_point) { 100 } # °C
 
-      before do
-        described_class.tell(story)
-      end
+      before { described_class.tell(story) }
 
       specify "the pigs hung a pot of water on the fireplace and made a fire" do
         expect(pot.contents).to eq([water])
