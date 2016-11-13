@@ -9,7 +9,7 @@ module ThreeLittlePigs
 
       before { described_class.tell(story) }
 
-      specify "the man gives the third little pig a load of brick" do
+      specify "the man gives the third little pig a load of bricks" do
         expect(third_pig.inventory).to eq(Load.of(:bricks))
         expect(brick_man.inventory).to be_empty
       end
