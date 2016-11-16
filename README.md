@@ -4,9 +4,14 @@
 [![Code Climate](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/gpa.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs)
 [![Test Coverage](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/coverage.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs/coverage)
 
-The version of the story presented here is an adaptation of
+This is the story of The Three Little Pigs, in Ruby.
+It is adaptated from the
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
-shortened down, and changed to fit the flow of a computer program.
+shortened down, and Disney-fied a bit (eg no pigs are harmed by wolves).
+
+The app, or more accurately its tests, were designed to be presented to an
+audience, so the app itself doesn't have much outward-facing functionality:
+it's all about the flow of the story, and how its state changes as it progresses.
 
 ## Installation :pig_nose:
 
