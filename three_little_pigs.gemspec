@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest-reporters", "~> 1.1"
   spec.add_development_dependency "pry-byebug", "~> 3.1"
   spec.add_development_dependency "simplecov", "~> 0.11"
-  spec.add_development_dependency "codeclimate-test-reporter", "~> 0.5"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0"
 end
