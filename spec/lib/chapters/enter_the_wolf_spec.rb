@@ -3,7 +3,7 @@ require "spec_helper"
 module ThreeLittlePigs
   module Chapters
     RSpec.describe EnterTheWolf do
-      let(:story) { Story.so_far(until_chapter: described_class) }
+      let(:story) { Story.until_chapter(described_class) }
 
       before do
         described_class.tell(story)

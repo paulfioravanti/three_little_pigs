@@ -7,7 +7,7 @@ module ThreeLittlePigs
 
       def setup
         suppress_output do
-          @story = Story.so_far
+          @story = Story.beginning
           OnceUponATime.tell(story)
         end
         @first_pig = story.first_pig

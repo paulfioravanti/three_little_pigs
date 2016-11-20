@@ -13,7 +13,7 @@ module ThreeLittlePigs
 
     def upto((chapter_name, _chapter_text))
       chapter_name = Utilities.demodulize(chapter_name)
-      row = CHAPTERS.find { |name, content| name == chapter_name }
+      row = CHAPTERS.find { |name, _content| name == chapter_name }
       get_consts(chapters_upto(row))
     end
 

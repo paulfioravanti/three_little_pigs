@@ -3,7 +3,7 @@ require "spec_helper"
 module ThreeLittlePigs
   module Chapters
     RSpec.describe WolfAttacksBrickHouse do
-      let(:story) { Story.so_far(until_chapter: described_class) }
+      let(:story) { Story.until_chapter(described_class) }
       let(:wolf) { story.wolf }
       let(:third_pig) { story.third_pig }
       let(:brick_house) { third_pig.house }

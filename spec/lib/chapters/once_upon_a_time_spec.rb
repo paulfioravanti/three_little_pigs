@@ -3,7 +3,7 @@ require "spec_helper"
 module ThreeLittlePigs
   module Chapters
     RSpec.describe OnceUponATime do
-      let(:story) { Story.so_far }
+      let(:story) { Story.beginning }
 
       before { described_class.tell(story) }
 

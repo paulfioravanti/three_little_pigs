@@ -3,7 +3,7 @@ require "spec_helper"
 module ThreeLittlePigs
   module Chapters
     RSpec.describe PigsLiveWithTheirMother do
-      let(:story) { Story.so_far(until_chapter: described_class) }
+      let(:story) { Story.until_chapter(described_class) }
       let(:mother_pig) { story.mother_pig }
       let(:first_pig) { story.first_pig }
       let(:second_pig) { story.second_pig }
