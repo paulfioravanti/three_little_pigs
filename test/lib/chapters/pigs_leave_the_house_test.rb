@@ -7,7 +7,7 @@ module ThreeLittlePigs
 
       def setup
         suppress_output do
-          @story = Story.so_far(until_chapter: PigsLeaveTheHouse)
+          @story = Story.until_chapter(PigsLeaveTheHouse)
           PigsLeaveTheHouse.tell(story)
         end
         @mother_pig = story.mother_pig

@@ -21,8 +21,8 @@ module ThreeLittlePigs
       tell(Chapters.upto(Chapters::OnceUponATime))
     end
 
-    def so_far(until_chapter:)
-      tell(Chapters.upto(until_chapter))
+    def until_chapter(chapter)
+      tell(Chapters.upto(chapter))
     end
 
     def kill(character)
