@@ -7,13 +7,17 @@
 This is the story of The Three Little Pigs, in Ruby.
 It is adaptated from the
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
-shortened down, and Disney-fied a bit (eg no pigs are harmed by wolves).
+shortened down, and Disney-fied a little bit.
 
 The app, or more accurately its tests, were designed to be presented to an
-audience, so the app itself doesn't have much outward-facing functionality:
-it's all about the flow of the story, and how its state changes as it progresses.
+audience.  So, the app itself doesn't have much outward-facing functionality,
+and the details of the implementation do not matter: it's all about the flow
+of the story during the presentation, and showing how the story's state changes
+as it progresses.
 
 ## Installation :pig_nose:
+
+First, install Ruby 2.3.3 on your local machine, then:
 
     $ git clone https://github.com/paulfioravanti/three_little_pigs.git
     $ cd three_little_pigs

@@ -4,7 +4,7 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-- 2.3.2
+- 2.3.3
 addons:
   code_climate:
     repo_token: $CODECLIMATE_REPO_TOKEN
