@@ -50,9 +50,14 @@ View test coverage report:
 
 ## Presentation :heart:
 
-This project was presented at [Rails Camp 20](https://ti.to/ruby-australia/rails-camp-queensland-2016/en)
-on 10 Dec 2016, and at the [Ruby on Rails Oceania Sydney meetup](https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/events/234773812/)
+This project was presented at
+[Rails Camp 20](https://ti.to/ruby-australia/rails-camp-queensland-2016/en)
+on 10 Dec 2016, and at the
+[Ruby on Rails Oceania Sydney meetup](https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/events/234773812/)
 on 13 Dec 2016.
+
+A video of the presentation at RORO can be found
+[here](https://vimeo.com/196540052).
 
 The presentation deck can be found [here](https://speakerdeck.com/paulfioravanti/the-story-of-the-three-little-pigs),
 and if you're interested in getting a hold of the Keynote file, [tweet at me](https://twitter.com/paulfioravanti).
