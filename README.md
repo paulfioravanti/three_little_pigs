@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/coverage.svg)](https://codeclimate.com/github/paulfioravanti/three_little_pigs/coverage)
 
 This is the story of The Three Little Pigs, in Ruby.
-It is adaptated from the
+It is adapted from the
 [the original story](http://www.authorama.com/english-fairy-tales-16.html),
 shortened down, and Disney-fied a little bit.
 
