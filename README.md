@@ -17,7 +17,7 @@ as it progresses.
 
 ## Installation :pig_nose:
 
-First, install Ruby 2.3.3 on your local machine, then:
+First, install Ruby 2.4.0 on your local machine, then:
 
     $ git clone https://github.com/paulfioravanti/three_little_pigs.git
     $ cd three_little_pigs
