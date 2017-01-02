@@ -32,9 +32,13 @@ module ThreeLittlePigs
 
     def inflict_damage(damage_level)
       self.damage += damage_level
+      # rubocop:disable Style/GuardClause
+      # NOTE: Can't really be converted to a guard clause as the first line
+      # needs to have happened before the following conditional.
       if damage > strength
         Story.houses.delete(self)
       end
+      # rubocop:enable Style/GuardClause
     end
   end
 end

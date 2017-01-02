@@ -8,7 +8,7 @@ module ThreeLittlePigs
         third_pig = story.third_pig
 
         tries = 2
-        while third_pig.house && tries > 0
+        while third_pig.house && tries.positive?
           wolf.huff(at: third_pig.house)
           wolf.puff(at: third_pig.house)
           tries -= 1

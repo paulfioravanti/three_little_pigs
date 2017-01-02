@@ -11,7 +11,7 @@ module ThreeLittlePigs
     def give(building_material, to:)
       building_material = BuildingMaterials.const_for(building_material)
       to.inventory, self.inventory =
-        inventory.partition { |item| item.kind_of?(building_material) }
+        inventory.partition { |item| item.is_a?(building_material) }
     end
   end
 end

@@ -13,7 +13,8 @@ module ThreeLittlePigs
         @pot = story.pot
         @water = pot.water
         @fireplace = story.third_pig.house.fireplace
-        @boiling_point = 100 # °C
+        # value represents degrees celsius
+        @boiling_point = 100
       end
 
       def test_the_pigs_hung_a_pot_of_water_on_the_fireplace_and_made_a_fire

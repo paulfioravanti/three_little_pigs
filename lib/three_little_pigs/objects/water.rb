@@ -1,8 +1,9 @@
 module ThreeLittlePigs
   class Water
-    ROOM_TEMPERATURE = 20 # °C
+    # Values in degrees celsius
+    ROOM_TEMPERATURE = 20
     private_constant :ROOM_TEMPERATURE
-    BOILING_POINT = 100 # °C
+    BOILING_POINT = 100
     private_constant :BOILING_POINT
 
     attr_accessor :temperature

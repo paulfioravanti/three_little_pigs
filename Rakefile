@@ -15,4 +15,4 @@ task :tests_and_specs do
   Rake::Task[:spec].invoke
 end
 
-task :default => :tests_and_specs
+task default: :tests_and_specs

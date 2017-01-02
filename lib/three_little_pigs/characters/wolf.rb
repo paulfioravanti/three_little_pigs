@@ -15,7 +15,7 @@ module ThreeLittlePigs
       power_level = self.class.const_get("#{__callee__.upcase}_POWER")
       at.inflict_damage(power_level)
     end
-    alias_method :puff, :huff
+    alias puff huff
 
     def enter(location)
       location << self

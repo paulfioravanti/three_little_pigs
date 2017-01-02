@@ -10,5 +10,6 @@ addons:
     repo_token: $CODECLIMATE_REPO_TOKEN
 script:
 - bin/rake
+- bundle exec rubocop
 after_success:
 - bundle exec codeclimate-test-reporter
