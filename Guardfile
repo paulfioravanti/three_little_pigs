@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 group :red_green_refactor, halt_on_fail: true do
   guard :rspec, cmd: "bin/rspec" do
     require "guard/rspec/dsl"

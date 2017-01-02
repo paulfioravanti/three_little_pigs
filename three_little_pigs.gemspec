@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative "lib/three_little_pigs/version"
 
 # rubocop:disable Metrics/BlockLength

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module ThreeLittlePigs
   module Utilities
     module_function

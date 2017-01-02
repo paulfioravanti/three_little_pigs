@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "test_helper"
 
 module ThreeLittlePigs
@@ -7,6 +8,7 @@ module ThreeLittlePigs
                   :huff_mock, :puff_mock
 
       # rubocop:disable Metrics/AbcSize
+      # rubocop:disable Metrics/MethodLength
       # NOTE: The long setup can't really be helped in this scenario
       def setup
         suppress_output do
@@ -40,6 +42,7 @@ module ThreeLittlePigs
         end
       end
       # rubocop:enable Metrics/AbcSize
+      # rubocop:enable Metrics/MethodLength
 
       def test_wolf_huffed_and_puffed_but_could_not_blow_the_brick_house_down
         huff_mock.verify

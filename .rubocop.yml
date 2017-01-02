@@ -18,27 +18,21 @@ AllCops:
 Lint/Debugger:
   Enabled: false
 
+# NOTE: Default is 15
 Metrics/AbcSize:
-  Max: 20
+  Max: 17
 
+# NOTE: Default is 10
 Metrics/MethodLength:
-  Max: 30
+  Max: 17
 
 Metrics/ModuleLength:
   Exclude:
     - "spec/**/*"
 
-RSpec/ExampleLength:
-  Max: 9
-
+# NOTE: Default is 1
 RSpec/MultipleExpectations:
-  Max: 5
-
-# NOTE: This deep nesting mostly due to the wide range of paths that gem
-# installation and file fetching can take, and the different errors that
-# can occur.
-RSpec/NestedGroups:
-  MaxNesting: 8
+  Max: 4
 
 Style/Documentation:
   Enabled: false
@@ -57,10 +51,6 @@ Style/FirstMethodArgumentLineBreak:
 
 Style/FirstMethodParameterLineBreak:
   Enabled: true
-
-# NOTE: PDF generation requires string mutation, so this can't be used for now.
-Style/FrozenStringLiteralComment:
-  Enabled: false
 
 Style/IfUnlessModifier:
   Enabled: false
