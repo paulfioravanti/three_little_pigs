@@ -20,7 +20,7 @@ module ThreeLittlePigs
     def use(building_material)
       building_material = BuildingMaterials.const_for(building_material)
       building_materials, self.inventory =
-        inventory.partition { |item| item.kind_of?(building_material) }
+        inventory.partition { |item| item.is_a?(building_material) }
       building_materials
     end
 

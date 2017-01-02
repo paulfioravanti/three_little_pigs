@@ -8,11 +8,12 @@ module ThreeLittlePigs
         second_pig = story.second_pig
         third_pig = story.third_pig
 
-        mother_pig = story.mother_pig =
-          Pig.new(
-            slug: "mother_pig",
-            children: [first_pig, second_pig, third_pig]
-          )
+        mother_pig =
+          story.mother_pig =
+            Pig.new(
+              slug: "mother_pig",
+              children: [first_pig, second_pig, third_pig]
+            )
 
         story.houses =
           [

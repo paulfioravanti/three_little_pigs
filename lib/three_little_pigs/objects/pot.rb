@@ -11,14 +11,18 @@ module ThreeLittlePigs
     end
 
     def water
-      contents.find { |item| item.kind_of?(Water) }
+      contents.find { |item| item.is_a?(Water) }
     end
 
     def <<(object)
       contents << object
+      # rubocop:disable Style/GuardClause
+      # NOTE: Can't really be converted to a guard clause as the first line
+      # needs to have happened before the following conditional.
       if water&.boiling?
         Story.kill(contents.delete(object))
       end
+      # rubocop:enable Style/GuardClause
     end
   end
 end

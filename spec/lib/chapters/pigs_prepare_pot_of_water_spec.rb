@@ -7,7 +7,8 @@ module ThreeLittlePigs
       let(:pot) { story.pot }
       let(:water) { pot.water }
       let(:fireplace) { story.third_pig.house.fireplace }
-      let(:boiling_point) { 100 } # °C
+      # value represents degrees celsius
+      let(:boiling_point) { 100 }
 
       before { described_class.tell(story) }
 

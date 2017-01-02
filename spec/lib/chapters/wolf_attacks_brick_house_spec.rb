@@ -14,7 +14,7 @@ module ThreeLittlePigs
         described_class.tell(story)
       end
 
-      specify "wolf huffed and puffed but could not blow the brick house down" do
+      specify "wolf huffed and puffed but couldn't blow the brick house down" do
         expect(wolf).to have_received(:huff).with(at: brick_house).twice
         expect(wolf).to have_received(:puff).with(at: brick_house).twice
         expect(third_pig.house).to be_truthy

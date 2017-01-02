@@ -12,7 +12,7 @@ module ThreeLittlePigs
         hearth << object
       end
 
-      alias_method :endpoint, :hearth
+      alias endpoint hearth
     end
   end
 end

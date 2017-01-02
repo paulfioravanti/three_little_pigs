@@ -6,6 +6,8 @@ module ThreeLittlePigs
       attr_reader :story, :wolf, :third_pig, :brick_house,
                   :huff_mock, :puff_mock
 
+      # rubocop:disable Metrics/AbcSize
+      # NOTE: The long setup can't really be helped in this scenario
       def setup
         suppress_output do
           @story = Story.until_chapter(WolfAttacksBrickHouse)
@@ -14,17 +16,19 @@ module ThreeLittlePigs
           @brick_house = third_pig.house
           @huff_mock = Minitest::Mock.new
           2.times do
+            # stub return value of `call` with original value
             huff_mock.expect(
               :call,
-              wolf.huff(at: brick_house), # stub with original value
+              wolf.huff(at: brick_house),
               [{ at: brick_house }]
             )
           end
           @puff_mock = Minitest::Mock.new
           2.times do
+            # stub return value of `call` with original value
             puff_mock.expect(
               :call,
-              wolf.puff(at: brick_house), # stub with original value
+              wolf.puff(at: brick_house),
               [{ at: brick_house }]
             )
           end
@@ -35,6 +39,7 @@ module ThreeLittlePigs
           end
         end
       end
+      # rubocop:enable Metrics/AbcSize
 
       def test_wolf_huffed_and_puffed_but_could_not_blow_the_brick_house_down
         huff_mock.verify
