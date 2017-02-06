@@ -68,7 +68,7 @@ and if you're interested in getting a hold of the Keynote file, [tweet at me](ht
 This story is available as open source under the terms of the
 [MIT License](http://opensource.org/licenses/MIT).
 
-## Social :sparkles:
+## Social :sparkles: [![Contact](https://img.shields.io/badge/contact-%40paulfioravanti-blue.svg)](https://twitter.com/paulfioravanti)
 
 <a href="http://stackoverflow.com/users/567863/paul-fioravanti">
   <img src="http://stackoverflow.com/users/flair/567863.png" width="208" height="58" alt="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Paul Fioravanti at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
