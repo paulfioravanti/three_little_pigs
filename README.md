@@ -57,7 +57,8 @@ on 10 Dec 2016, and at the
 on 13 Dec 2016.
 
 A video of the presentation at RORO can be found
-[here](https://vimeo.com/196540052).
+[here](https://vimeo.com/196540052) or
+[here](https://www.youtube.com/watch?v=hxhibetoPLw).
 
 The presentation deck can be found [here](https://speakerdeck.com/paulfioravanti/the-story-of-the-three-little-pigs),
 and if you're interested in getting a hold of the Keynote file, [tweet at me](https://twitter.com/paulfioravanti).
