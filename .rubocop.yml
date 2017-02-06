@@ -26,10 +26,6 @@ Metrics/AbcSize:
 Metrics/MethodLength:
   Max: 17
 
-Metrics/ModuleLength:
-  Exclude:
-    - "spec/**/*"
-
 # NOTE: Default is 1
 RSpec/MultipleExpectations:
   Max: 4
@@ -38,7 +34,7 @@ Style/Documentation:
   Enabled: false
 
 Style/DotPosition:
-  EnforcedStyle: trailing
+  EnforcedStyle: "trailing"
 
 Style/FirstArrayElementLineBreak:
   Enabled: true
@@ -66,7 +62,7 @@ Style/MethodCalledOnDoEndBlock:
 
 Style/MultilineAssignmentLayout:
   Enabled: true
-  EnforcedStyle: new_line
+  EnforcedStyle: "new_line"
 
 Style/MultilineMethodCallIndentation:
   Exclude:
@@ -79,7 +75,7 @@ Style/Send:
   Enabled: true
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: "double_quotes"
   ConsistentQuotesInMultiline: true
 
 Style/StringMethods:
