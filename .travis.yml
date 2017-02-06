@@ -4,12 +4,14 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-- 2.4.0
+  - 2.4.0
 addons:
   code_climate:
     repo_token: $CODECLIMATE_REPO_TOKEN
+before_install:
+  - gem update --system
 script:
-- bin/rake
-- bundle exec rubocop
+  - bin/rake
+  - bundle exec rubocop
 after_success:
-- bundle exec codeclimate-test-reporter
+  - bundle exec codeclimate-test-reporter
