@@ -12,12 +12,9 @@ end
 RSpec::Core::RakeTask.new(:spec)
 
 task :tests_and_specs, [:coverage] do |_task, args|
-  ENV["NO_COVERAGE"] =
-    if args.coverage == "NO_COVERAGE"
-      "true"
-    else
-      nil
-    end
+  if args.coverage == "NO_COVERAGE"
+    ENV["NO_COVERAGE"] = "true"
+  end
   Rake::Task[:test].invoke
   Rake::Task[:spec].invoke
 end
