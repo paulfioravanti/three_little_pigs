@@ -1,20 +1,19 @@
 # frozen_string_literal: true
 group :red_green_refactor, halt_on_fail: true do
-  guard :rspec, cmd: "bin/rspec" do
-    require "guard/rspec/dsl"
-    dsl = Guard::RSpec::Dsl.new(self)
+  guard :rake,
+        task: :tests_and_specs,
+        task_args: ["NO_COVERAGE"],
+        run_on_start: false do
 
-    # Feel free to open issues for suggestions and improvements
+    # Minitest files
+    watch(%r{^test/(.*)\/?test_(.*)\.rb$})
+    watch(%r{^lib/(.*/)?([^/]+)\.rb$}) { |m| "test/#{m[1]}test_#{m[2]}.rb" }
+    watch(%r{^test/test_helper\.rb$}) { 'test' }
 
     # RSpec files
-    rspec = dsl.rspec
-    watch(rspec.spec_helper) { rspec.spec_dir }
-    watch(rspec.spec_support) { rspec.spec_dir }
-    watch(rspec.spec_files)
-
-    # Ruby files
-    ruby = dsl.ruby
-    dsl.watch_spec_files_for(ruby.lib_files)
+    watch(%r{^spec/.+_spec\.rb$})
+    watch(%r{^lib/(.+)\.rb$}) { |m| "spec/lib/#{m[1]}_spec.rb" }
+    watch('spec/spec_helper.rb') { "spec" }
   end
 
   guard :rubocop,
