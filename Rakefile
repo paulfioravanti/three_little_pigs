@@ -2,7 +2,6 @@
 require "bundler/gem_tasks"
 require "rake/testtask"
 require "rspec/core/rake_task"
-require "pry"
 
 Rake::TestTask.new(:test) do |t|
   t.libs << "test"
