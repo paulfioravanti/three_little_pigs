@@ -11,8 +11,8 @@ require "pry-byebug"
 unless ENV["NO_COVERAGE"]
   unless SimpleCov.running
     SimpleCov.start do
-      add_filter "/test/"
-      add_filter "/spec/"
+      # add_filter "/test/"
+      # add_filter "/spec/"
       SimpleCov.minimum_coverage 100
     end
   end
