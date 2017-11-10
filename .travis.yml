@@ -11,6 +11,8 @@ addons:
 before_install:
   - gem update --system
 script:
+  # NOTE: coverage directory has a habit of being cached and potentially added
+  # to when you want to create it anew, so delete it every run.
   - rm -rf coverage
   - bin/rake
   - bin/rubocop
