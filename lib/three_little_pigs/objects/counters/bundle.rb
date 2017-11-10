@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module ThreeLittlePigs
   module Bundle
     NUMBER_OF_ITEMS_IN_A_BUNDLE = 10

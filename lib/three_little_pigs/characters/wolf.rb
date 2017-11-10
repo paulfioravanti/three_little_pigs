@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module ThreeLittlePigs
   class Wolf
     HUFF_POWER = 10

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module ThreeLittlePigs
   module BuildingMaterials
     module_function

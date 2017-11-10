@@ -3,6 +3,9 @@ require: rubocop-rspec
 
 AllCops:
   Exclude:
+    # NOTE: bundle executable seems to have a lot of Rubocop issues by default,
+    # and I don't really want to fix them...
+    - "bin/bundle"
     - "resume.rb"
     - "strings_en.rb"
     - "strings_it.rb"
@@ -12,6 +15,29 @@ AllCops:
     # scan all files in all gems, so make the exclusion explicit here.
     - "vendor/**/*"
   TargetRubyVersion: 2.3
+
+Layout/DotPosition:
+  EnforcedStyle: "trailing"
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: "new_line"
+
+Layout/MultilineMethodCallIndentation:
+  Exclude:
+    - "spec/**/*"
 
 # NOTE: This app makes use of Pry directly in the code, so seeing it left
 # in the codebase is expected.
@@ -33,21 +59,6 @@ RSpec/MultipleExpectations:
 Style/Documentation:
   Enabled: false
 
-Style/DotPosition:
-  EnforcedStyle: "trailing"
-
-Style/FirstArrayElementLineBreak:
-  Enabled: true
-
-Style/FirstHashElementLineBreak:
-  Enabled: true
-
-Style/FirstMethodArgumentLineBreak:
-  Enabled: true
-
-Style/FirstMethodParameterLineBreak:
-  Enabled: true
-
 Style/IfUnlessModifier:
   Enabled: false
 
@@ -59,14 +70,6 @@ Style/InlineComment:
 
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
-
-Style/MultilineAssignmentLayout:
-  Enabled: true
-  EnforcedStyle: "new_line"
-
-Style/MultilineMethodCallIndentation:
-  Exclude:
-    - "spec/**/*"
 
 Style/OptionHash:
   Enabled: true

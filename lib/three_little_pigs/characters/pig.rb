@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module ThreeLittlePigs
   class Pig
     attr_reader :children, :slug

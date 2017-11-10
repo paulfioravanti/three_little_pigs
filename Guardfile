@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 group :red_green_refactor, halt_on_fail: true do
   guard :rake,
         task: :tests_and_specs,
