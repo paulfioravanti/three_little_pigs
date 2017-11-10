@@ -46,6 +46,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop", "~> 0.46"
   spec.add_development_dependency "rubocop-rspec", "~> 1.9"
-  spec.add_development_dependency "simplecov", "~> 0.15"
+  # SimpleCov gem fixed in place due to codeclimate-test-reporter dependencies
+  spec.add_development_dependency "simplecov", "0.13"
 end
 # rubocop:enable Metrics/BlockLength
