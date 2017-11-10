@@ -9,9 +9,12 @@ Minitest::Reporters.use!
 require "pry-byebug"
 
 unless ENV["NO_COVERAGE"]
-  SimpleCov.command_name("minitest tests")
-  SimpleCov.start do
-    SimpleCov.minimum_coverage 100
+  SimpleCov.command_name("Minitest tests")
+
+  unless SimpleCov.running
+    SimpleCov.start do
+      SimpleCov.minimum_coverage 100
+    end
   end
 end
 
