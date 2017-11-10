@@ -11,6 +11,7 @@ addons:
 before_install:
   - gem update --system
 script:
+  - rm -rf coverage
   - bin/rake
   - bin/rubocop
 after_success:
