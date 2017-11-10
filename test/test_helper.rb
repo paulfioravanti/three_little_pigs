@@ -8,6 +8,10 @@ require "minitest/reporters"
 Minitest::Reporters.use!
 require "pry-byebug"
 
+unless ENV["NO_COVERAGE"]
+  SimpleCov.command_name("tests")
+end
+
 # REF: https://gist.github.com/moertel/11091573
 # rubocop:disable Lint/RescueException
 # NOTE: This method only temporarily rescues from Exception before re-raising.
