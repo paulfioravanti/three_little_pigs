@@ -3,9 +3,9 @@ require: rubocop-rspec
 
 AllCops:
   Exclude:
-    # NOTE: bundle executable seems to have a lot of Rubocop issues by default,
-    # and I don't really want to fix them...
-    - "bin/bundle"
+    # NOTE: binstubs seem to be re-generating after every bundle, so I'm going
+    # to consider code in them not my responsibility.
+    - "bin/**/*"
     - "resume.rb"
     - "strings_en.rb"
     - "strings_it.rb"
