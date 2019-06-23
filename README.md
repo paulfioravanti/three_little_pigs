@@ -5,8 +5,8 @@
 [![Test Coverage][code-climate-coverage-badge]][code-climate-coverage-url]
 
 This is the story of The Three Little Pigs, in [Ruby][].
-It is adapted from the [the original story][three-little-pigs-story],
-shortened down, and Disney-fied a little bit.
+It is adapted from [the original story][three-little-pigs-story], shortened
+down, and Disney-fied a little bit.
 
 The app, or more accurately its tests, were designed to be presented to an
 audience.  So, the app itself doesn't have much outward-facing functionality,
