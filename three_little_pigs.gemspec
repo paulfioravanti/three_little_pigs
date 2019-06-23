@@ -2,8 +2,6 @@
 
 require_relative "lib/three_little_pigs/version"
 
-# rubocop:disable Metrics/BlockLength
-# NOTE: Block length can't really be helped here...
 Gem::Specification.new do |spec|
   spec.name = "three_little_pigs"
   spec.version = ThreeLittlePigs::VERSION
@@ -35,18 +33,15 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.test_files = spec.files.grep(%r{^(spec)/})
 
-  spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "codeclimate-test-reporter", "~> 1.0"
-  spec.add_development_dependency "fuubar", "~> 2.2.0"
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "fuubar", "~> 2.4"
   spec.add_development_dependency "guard-rake", "~> 1.0"
   spec.add_development_dependency "guard-rubocop", "~> 1.2"
   spec.add_development_dependency "minitest-reporters", "~> 1.1"
   spec.add_development_dependency "pry-byebug", "~> 3.1"
   spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop", "~> 0.46"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.9"
-  # SimpleCov gem fixed in place due to codeclimate-test-reporter dependencies
-  spec.add_development_dependency "simplecov", "0.13"
+  spec.add_development_dependency "rspec", "~> 3.4"
+  spec.add_development_dependency "rubocop", "~> 0.71"
+  spec.add_development_dependency "rubocop-rspec", "~> 1.32"
+  spec.add_development_dependency "simplecov", "~> 0.16"
 end
-# rubocop:enable Metrics/BlockLength
