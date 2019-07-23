@@ -4,6 +4,11 @@
 [![Code Climate][code-climate-badge]][code-climate-url]
 [![Test Coverage][code-climate-coverage-badge]][code-climate-coverage-url]
 
+> This story takes place when pigs spoke rhyme  
+  And monkeys chewed tobacco,  
+  And hens took snuff to make them tough,  
+  And ducks went quack, quack, quack, O!  
+
 This is the story of The Three Little Pigs, in [Ruby][].
 It is adapted from [the original story][three-little-pigs-story], shortened
 down, and Disney-fied a little bit.
