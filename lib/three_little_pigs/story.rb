@@ -20,7 +20,7 @@ module ThreeLittlePigs
     end
 
     def beginning
-      tell(Chapters.upto(Chapters::OnceUponATime))
+      tell(Chapters.upto(Chapters::Chapter01OnceUponATime))
     end
 
     def until_chapter(chapter)
