@@ -64,9 +64,12 @@ A video of the presentation at RORO can be found at:
 - [Vimeo][vimeo-url]
 - [YouTube][youtube-url]
 
-The presentation deck can be found [here][speakerdeck-url], and if you're
-interested in getting a hold of the [Keynote][] file,
-[tweet at me][twitter-url].
+All the beautiful illustrations used in the presentation were created by
+[Lee Sheppard][].
+
+The presentation deck can be [found on Speakerdeck][Speakerdeck], and all other
+presentation-related resources, including the location of the [Keynote][] file,
+can be [found on Github][Github].
 
 ## License :house:
 
@@ -82,8 +85,10 @@ This story is available as open source under the terms of the [MIT License][].
 [code-climate-coverage-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
 [code-climate-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
 [Disneyfy]: https://www.dictionary.com/browse/disneyfy
+[Github]: https://github.com/paulfioravanti/presentations/tree/master/three_little_pigs
 [Guard]: https://github.com/guard/guard/
 [Keynote]: https://www.apple.com/keynote/
+[Lee Sheppard]: https://leesheppard.com/
 [Minitest]: https://github.com/seattlerb/minitest
 [MIT License]: LICENSE.txt
 [rails-camp-20]: https://ti.to/ruby-australia/rails-camp-queensland-2016/en
@@ -91,7 +96,7 @@ This story is available as open source under the terms of the [MIT License][].
 [RSpec]: http://rspec.info/
 [Ruby]: https://github.com/ruby/ruby
 [Simplecov]: https://github.com/colszowka/simplecov
-[speakerdeck-url]: https://speakerdeck.com/paulfioravanti/the-story-of-the-three-little-pigs
+[Speakerdeck]: https://speakerdeck.com/paulfioravanti/the-story-of-the-three-little-pigs
 [stackoverflow-badge]: http://stackoverflow.com/users/flair/567863.png
 [stackoverflow-url]: http://stackoverflow.com/users/567863/paul-fioravanti
 [survey-tool-elixir]: https://github.com/paulfioravanti/survey_tool_elixir
