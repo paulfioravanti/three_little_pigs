@@ -11,7 +11,7 @@
 
 This is the story of The Three Little Pigs, in [Ruby][].
 It is adapted from [the original story][three-little-pigs-story], shortened
-down, and Disney-fied a little bit.
+down, and [Disney-fied][Disneyfy] a little bit.
 
 The app, or more accurately its tests, were designed to be presented to an
 audience.  So, the app itself doesn't have much outward-facing functionality,
@@ -81,6 +81,7 @@ This story is available as open source under the terms of the [MIT License][].
 [code-climate-coverage-badge]: https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/coverage.svg
 [code-climate-coverage-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
 [code-climate-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
+[Disneyfy]: https://www.dictionary.com/browse/disneyfy
 [Guard]: https://github.com/guard/guard/
 [Keynote]: https://www.apple.com/keynote/
 [Minitest]: https://github.com/seattlerb/minitest
