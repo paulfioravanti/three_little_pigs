@@ -2,7 +2,6 @@
 
 [![Build Status][travis-badge]][travis-url]
 [![Code Climate][code-climate-badge]][code-climate-url]
-[![Test Coverage][code-climate-coverage-badge]][code-climate-coverage-url]
 
 > This story takes place when pigs spoke rhyme  
   And monkeys chewed tobacco,  
