@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Only run coverage when running spec suite outside of Guard
 unless ENV["NO_COVERAGE"]
   unless SimpleCov.running

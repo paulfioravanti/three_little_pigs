@@ -14,7 +14,7 @@ AllCops:
     # that CI still goes looking in the vendor directory and attempts to
     # scan all files in all gems, so make the exclusion explicit here.
     - "vendor/**/*"
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
 
 Layout/DotPosition:
   EnforcedStyle: "trailing"
@@ -58,6 +58,10 @@ Naming/RescuedExceptionsVariableName:
 # NOTE: Default is 1
 RSpec/MultipleExpectations:
   Max: 4
+
+# NOTE: Default is 5
+RSpec/MultipleMemoizedHelpers:
+  Max: 6
 
 Style/Documentation:
   Enabled: false

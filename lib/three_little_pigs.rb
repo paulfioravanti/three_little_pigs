@@ -6,7 +6,7 @@ require "forwardable"
 # `bundle` is loaded before the `load` references it.
 require_relative "three_little_pigs/objects/house/part"
 require_relative "three_little_pigs/objects/counters/bundle"
-Dir["#{__dir__}/three_little_pigs/**/*.rb"].each { |file| require file }
+Dir["#{__dir__}/three_little_pigs/**/*.rb"].sort.each { |file| require file }
 
 module ThreeLittlePigs
   module_function

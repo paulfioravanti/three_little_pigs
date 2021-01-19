@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "The Three Little Pigs TDDed"
   spec.description = "The Three Little Pigs TDDed"
+  spec.required_ruby_version = "2.7.2"
   spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
