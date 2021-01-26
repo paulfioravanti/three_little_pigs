@@ -1,4 +1,6 @@
-# How to read this story
+# How to Read this Story
+
+### Illustrations by [Lee Sheppard][].
 
 ## Getting Started
 
@@ -29,8 +31,7 @@ When first running the command, you will see the following introduction:
 This story takes place when pigs spoke rhyme
 And monkeys chewed tobacco,
 And hens took snuff to make them tough,
-And ducks went quack, quack, quack, O!
-<br />
+And ducks went quack, quack, quack, O!<br />
 The Story of the Three Little Pigs
 </pre></strong>
 
@@ -270,6 +271,8 @@ pry(Chapter04FirstPigMeetsStrawMan)> exit
 
 ## Chapter 5: First Pig receives Straw
 
+![img pig_straw][]
+
 ### Story
 
 <strong><pre>
@@ -325,6 +328,8 @@ pry(Chapter05FirstPigReceivesStraw)> exit
 ```
 
 ## Chapter 6: First Pig builds Straw House
+
+![img house_straw][]
 
 ### Story
 
@@ -452,6 +457,8 @@ pry(Chapter07SecondPigMeetsStickMan)> exit
 
 ## Chapter 8: Second Pig receives Sticks
 
+![img pig_sticks][]
+
 ### Story
 
 <strong><pre>
@@ -505,6 +512,8 @@ pry(Chapter08SecondPigReceivesSticks)> exit
 ```
 
 ## Chapter 9: Second Pig builds Stick House
+
+![img house_sticks][]
 
 ### Story
 
@@ -633,6 +642,8 @@ pry(Chapter10ThirdPigMeetsBrickMan)> exit
 
 ## Chapter 11: Third Pig receives Bricks
 
+![img pig_bricks][]
+
 ### Story
 
 <strong><pre>
@@ -684,6 +695,8 @@ pry(Chapter11ThirdPigReceivesBricks)> exit
 ```
 
 ## Chapter 12: Third Pig builds Brick House
+
+![img house_bricks][]
 
 ### Story
 
@@ -755,6 +768,8 @@ pry(Chapter12ThirdPigBuildsBrickHouse)> exit
 
 ## Chapter 13: Enter the Wolf
 
+![img wolf][]
+
 ### Story
 
 <strong><pre>
@@ -790,16 +805,16 @@ pry(Chapter13EnterTheWolf)> exit
 
 ## Chapter 14: Wolf attacks Straw House
 
+![img wolf_blowing][]
+
 ### Story
 
 <strong><pre>
 The wolf went to the straw house, and said
 "Little pig, little pig, let me come in".
-The little pig replied "No, not by the hair of my chinny chin chin".
-
+The little pig replied "No, not by the hair of my chinny chin chin".<br />
 To which the wolf replied
-"Then I'll huff, and I'll puff, and I'll blow your house in".
-
+"Then I'll huff, and I'll puff, and I'll blow your house in".<br />
 And the wolf huffed and he puffed, and blew the house down.
 And the first little pig ran to his brother's house of sticks.
 </pre></strong>
@@ -868,10 +883,8 @@ pry(Chapter14WolfAttacksStrawHouse)> exit
 <strong><pre>
 So, the wolf went to the stick house, and said
 "Little pigs, little pigs, let me come in".
-"No, not by the hair of our chinny chin chins", replied the pigs.
-
-"Then I'll huff, and I'll puff, and I'll blow your house in"
-
+"No, not by the hair of our chinny chin chins", replied the pigs.<br />
+"Then I'll huff, and I'll puff, and I'll blow your house in"<br />
 So, the wolf huffed and puffed, and blew the house down.
 And the little pigs ran to their brother's house of bricks.
 </pre></strong>
@@ -936,10 +949,8 @@ pry(Chapter15WolfAttacksStickHouse)> exit
 <strong><pre>
 So, the wolf went to the brick house, and said
 "Little pigs, little pigs, let me come in".
-"No, not by the hair of our chinny chin chins", replied the pigs.
-
-"Then I'll huff, and I'll puff, and I'll blow your house in"
-
+"No, not by the hair of our chinny chin chins", replied the pigs.<br />
+"Then I'll huff, and I'll puff, and I'll blow your house in"<br />
 So, the wolf huffed and puffed, and huffed and puffed,
 but he could not blow the house down.
 </pre></strong>
@@ -1107,6 +1118,8 @@ pry(Chapter18PigsPreparePotOfWater)> exit
 
 ## Chapter 19: Wolf invades Brick House
 
+![img dead_wolf][]
+
 ### Story
 
 <strong><pre>
@@ -1152,3 +1165,20 @@ live happily ever after.
 ```ruby
 pry(Chapter19WolfInvadesBrickHouse)> exit
 ```
+
+---
+
+For more information on what conditions are specifically being asserted at each
+chapter in the story, look in the `spec/` or `test/` directories. The tests
+will read quite similarly to this story run-through.
+
+[img dead_wolf]: assets/dead_wolf.png
+[img house_bricks]: assets/house_bricks.png
+[img house_sticks]: assets/house_sticks.png
+[img house_straw]: assets/house_straw.png
+[img pig_bricks]: assets/pig_bricks.png
+[img pig_sticks]: assets/pig_sticks.png
+[img pig_straw]: assets/pig_straw.png
+[img wolf_blowing]: assets/wolf_blowing.png
+[img wolf]: assets/wolf.png
+[Lee Sheppard]: https://leesheppard.com/
