@@ -1,6 +1,6 @@
 # How to Read this Story
 
-### Illustrations by [Lee Sheppard][].
+### Illustrations by [Lee Sheppard][]
 
 ## Getting Started
 
@@ -75,7 +75,7 @@ OpenStruct {
 ```
 
 We can see that the story contains the `first_pig`, `second_pig`, and
-`third_pig`, all instances of class `Pig`: there are Three Little Pigs!
+`third_pig`, all instances of class `Pig`: these are our Three Little Pigs!
 :pig: :pig: :pig:
 
 ### Turn the Page...
@@ -90,7 +90,7 @@ pry(Chapter01OnceUponATime)> exit
 
 <strong><pre>
 The three little pigs had a mother, and they lived
-with together with her in her small house.
+together with her in her small house.
 </pre></strong>
 
 ### Prompt
@@ -1084,8 +1084,8 @@ pry(Chapter18PigsPreparePotOfWater)> pot.contents
 ]
 ```
 
-They then hung the pot on the fireplace hearth, so let's confirm the contents
-of the hearth:
+It may not look like liquid, but consider this to be water. They then hung the
+pot on the fireplace hearth, so let's confirm the contents of the hearth:
 
 ```ruby
 pry(Chapter18PigsPreparePotOfWater)> fireplace.hearth
@@ -1125,10 +1125,10 @@ pry(Chapter18PigsPreparePotOfWater)> exit
 <strong><pre>
 The wolf climbed into the open chimney, and prepared to slide down
 the chute.
-
+<br />
 The wolf slid down the chimney, and straight into the pot of water,
 where he was promptly boiled up.
-
+<br />
 "That's the end of the Big Bad Wolf", said one of the pigs,
 and they all lived happily ever after.
 </pre></strong>
@@ -1150,7 +1150,7 @@ From: /.../chapter_19_wolf_invades_brick_house.rb:14 Chapter19WolfInvadesBrickHo
 ### Analysis
 
 The "end of the Big Bad Wolf" can only mean that he has been boiled out of
-existence! So, does our story still have a wolf...?
+existence! So, does our story still have a Wolf...?
 
 ```ruby
 pry(Chapter19WolfInvadesBrickHouse)> story.wolf
