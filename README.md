@@ -37,6 +37,8 @@ of every "chapter" so you can inspect the state of the "story":
 
     $ DEBUG=true bin/three_little_pigs
 
+See [`HOWTO-README`][] for specific story points to check at each breakpoint.
+
 ## Testing :wolf:
 
 Tests for this story are written in both [RSpec][] specs and [Minitest][] tests.
@@ -86,6 +88,7 @@ This story is available as open source under the terms of the [MIT License][].
 [Disneyfy]: https://www.dictionary.com/browse/disneyfy
 [Github]: https://github.com/paulfioravanti/presentations/tree/master/three_little_pigs
 [Guard]: https://github.com/guard/guard/
+[`HOWTO-README`]: HOWTO-README.md
 [Keynote]: https://www.apple.com/keynote/
 [Lee Sheppard]: https://leesheppard.com/
 [Minitest]: https://github.com/seattlerb/minitest
