@@ -349,10 +349,11 @@ From: /.../chapter_06_first_pig_builds_straw_house.rb:17 Chapter06FirstPigBuilds
     11:   story.houses <<
     12:     House.build(
     13:       building_materials: first_pig.use(:straw),
-    14:       owner: first_pig
-    15:     )
-    16:   binding.pry if ENV["DEBUG"]
- => 17: end
+    14:       owner: first_pig,
+    15:       occupants: [first_pig]
+    16:     )
+    17:   binding.pry if ENV["DEBUG"]
+ => 18: end
 ```
 
 ### Analysis
@@ -533,10 +534,11 @@ From: /.../chapter_09_second_pig_builds_stick_house.rb:17 Chapter09SecondPigBuil
     11:   story.houses <<
     12:     House.build(
     13:       building_materials: second_pig.use(:sticks),
-    14:       owner: second_pig
-    15:     )
-    16:   binding.pry if ENV["DEBUG"]
- => 17: end
+    14:       owner: second_pig,
+    15:       occupants: [second_pig]
+    16:     )
+    17:   binding.pry if ENV["DEBUG"]
+ => 18: end
 ```
 
 ### Analysis
@@ -716,10 +718,11 @@ From: /.../chapter_12_third_pig_builds_brick_house.rb:17 Chapter12ThirdPigBuilds
     11:   story.houses <<
     12:     House.build(
     13:       building_materials: third_pig.use(:bricks),
-    14:       owner: third_pig
-    15:     )
-    16:   binding.pry if ENV["DEBUG"]
- => 17: end
+    14:       owner: third_pig,
+    15:       occupants: [third_pig]
+    16:     )
+    17:   binding.pry if ENV["DEBUG"]
+ => 18: end
 ```
 
 ### Analysis
