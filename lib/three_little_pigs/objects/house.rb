@@ -13,19 +13,24 @@ module ThreeLittlePigs
       Story.houses.find { |house| house.owner == owner }
     end
 
-    def self.build(building_materials:, **options)
-      options[:building_material] =
+    def self.build(building_materials:, owner:, occupants:)
+      building_material =
         BuildingMaterials.sym_for(building_materials)
-      options[:strength] =
+      strength =
         BuildingMaterials.combined_strength(building_materials)
-      new(options)
+      new(
+        owner: owner,
+        occupants: occupants,
+        building_material: building_material,
+        strength: strength
+      )
     end
 
-    def initialize(owner:, occupants: [owner], **options)
+    def initialize(owner:, occupants:, building_material: nil, strength: nil)
       @owner = owner
       @occupants = occupants
-      @building_material = options[:building_material]
-      @strength = options[:strength]
+      @building_material = building_material
+      @strength = strength
       @damage = 0
       @door = Door.new
       @windows = Windows.new

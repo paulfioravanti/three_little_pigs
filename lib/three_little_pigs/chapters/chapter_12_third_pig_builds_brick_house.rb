@@ -11,7 +11,8 @@ module ThreeLittlePigs
         story.houses <<
           House.build(
             building_materials: third_pig.use(:bricks),
-            owner: third_pig
+            owner: third_pig,
+            occupants: [third_pig]
           )
         binding.pry if ENV["DEBUG"]
       end
