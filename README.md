@@ -20,7 +20,7 @@ as it progresses.
 
 ## Installation :pig_nose:
 
-First, install Ruby 2.7.2 on your local machine, then:
+First, install Ruby 3.0 on your local machine, then:
 
     $ git clone https://github.com/paulfioravanti/three_little_pigs.git
     $ cd three_little_pigs
@@ -55,7 +55,7 @@ View test coverage report:
 
 ## Presentation :performing_arts:
 
-This project was presented at:
+This project was originally presented at:
 
 - [Rails Camp 20][rails-camp-20] on 10 Dec 2016
 - [Ruby on Rails Oceania Sydney meetup][roro] (RORO) on 13 Dec 2016.
