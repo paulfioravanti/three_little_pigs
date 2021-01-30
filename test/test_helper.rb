@@ -18,10 +18,10 @@ def suppress_output
     $stderr.reopen(File.new("/dev/null", "w"))
     $stdout.reopen(File.new("/dev/null", "w"))
     retval = yield
-  rescue Exception => error
+  rescue Exception => e
     $stdout.reopen(original_stdout)
     $stderr.reopen(original_stderr)
-    raise error
+    raise e
   ensure
     $stdout.reopen(original_stdout)
     $stderr.reopen(original_stderr)

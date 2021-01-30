@@ -6,7 +6,7 @@ group :red_green_refactor, halt_on_fail: true do
         task_args: ["NO_COVERAGE"],
         run_on_start: false do
     # Minitest files
-    watch(%r{^test/(.*)\/?test_(.*)\.rb$})
+    watch(%r{^test/(.*)/?test_(.*)\.rb$})
     watch(%r{^lib/(.*/)?([^/]+)\.rb$}) { |m| "test/#{m[1]}test_#{m[2]}.rb" }
     watch(%r{^test/test_helper\.rb$}) { "test" }
 

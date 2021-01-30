@@ -6,54 +6,20 @@ AllCops:
     # NOTE: binstubs seem to be re-generating after every bundle, so I'm going
     # to consider code in them not my responsibility.
     - "bin/**/*"
-    - "resume.rb"
-    - "strings_en.rb"
-    - "strings_it.rb"
-    - "strings_ja.rb"
     # NOTE: Although this exclusion is in the default Rubocop config, it seems
     # that CI still goes looking in the vendor directory and attempts to
     # scan all files in all gems, so make the exclusion explicit here.
     - "vendor/**/*"
-  TargetRubyVersion: 2.7
-
-Layout/DotPosition:
-  EnforcedStyle: "trailing"
-
-Layout/FirstArrayElementLineBreak:
-  Enabled: true
-
-Layout/FirstHashElementLineBreak:
-  Enabled: true
-
-Layout/FirstMethodArgumentLineBreak:
-  Enabled: true
-
-Layout/FirstMethodParameterLineBreak:
-  Enabled: true
-
-Layout/MultilineAssignmentLayout:
-  Enabled: true
-  EnforcedStyle: "new_line"
-
-Layout/MultilineMethodCallIndentation:
-  Exclude:
-    - "spec/**/*"
+  TargetRubyVersion: 3.0
 
 # NOTE: This app makes use of Pry directly in the code, so seeing it left
 # in the codebase is expected.
 Lint/Debugger:
   Enabled: false
 
-# NOTE: Default is 15
-Metrics/AbcSize:
-  Max: 17
-
 # NOTE: Default is 10
 Metrics/MethodLength:
   Max: 17
-
-Naming/RescuedExceptionsVariableName:
-  PreferredName: error
 
 # NOTE: Default is 1
 RSpec/MultipleExpectations:
@@ -69,27 +35,6 @@ Style/Documentation:
 Style/IfUnlessModifier:
   Enabled: false
 
-Style/ImplicitRuntimeError:
-  Enabled: true
-
-Style/InlineComment:
-  Enabled: true
-
-Style/MethodCalledOnDoEndBlock:
-  Enabled: true
-
-Style/OptionHash:
-  Enabled: true
-
-Style/Send:
-  Enabled: true
-
 Style/StringLiterals:
   EnforcedStyle: "double_quotes"
   ConsistentQuotesInMultiline: true
-
-Style/StringMethods:
-  Enabled: true
-
-Style/SymbolArray:
-  Enabled: true
