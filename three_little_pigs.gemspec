@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "The Three Little Pigs TDDed"
   spec.description = "The Three Little Pigs TDDed"
-  spec.required_ruby_version = "~> 2.7"
+  spec.required_ruby_version = "~> 3.0"
   spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
@@ -40,9 +40,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "guard-rubocop", "~> 1.2"
   spec.add_development_dependency "minitest-reporters", "~> 1.1"
   spec.add_development_dependency "pry-byebug", "~> 3.1"
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.4"
-  spec.add_development_dependency "rubocop", "~> 0.71"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.32"
+  spec.add_development_dependency "rubocop", "~> 1.9"
+  spec.add_development_dependency "rubocop-rspec", "~> 2.1"
   spec.add_development_dependency "simplecov", "~> 0.16"
 end
