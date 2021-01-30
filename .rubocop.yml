@@ -10,6 +10,7 @@ AllCops:
     # that CI still goes looking in the vendor directory and attempts to
     # scan all files in all gems, so make the exclusion explicit here.
     - "vendor/**/*"
+  NewCops: enable
   TargetRubyVersion: 3.0
 
 # NOTE: This app makes use of Pry directly in the code, so seeing it left
