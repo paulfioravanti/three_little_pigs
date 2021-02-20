@@ -101,7 +101,7 @@ available under the [Creative Commons Attribution 4.0 license][] (CC-BY-4.0).
 [MIT License]: LICENSE.txt
 [rails-camp-20]: https://ti.to/ruby-australia/rails-camp-queensland-2016/en
 [roro]: https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/events/234773812/
-[ROROSyd video]: https://www.youtube.com/watch?v=hxhibetoPLw
+[ROROSyd video]: https://vimeo.com/196540052
 [RSpec]: http://rspec.info/
 [Ruby]: https://github.com/ruby/ruby
 [Simplecov]: https://github.com/colszowka/simplecov
