@@ -18,6 +18,28 @@ and the details of the implementation do not matter: it's all about the flow
 of the story during the presentation, and showing how the story's state changes
 as it progresses.
 
+## Presentation :performing_arts:
+
+All the beautiful illustrations used in the presentation were created by
+[Lee Sheppard][].
+
+This project was originally presented at:
+
+- [Rails Camp 20][rails-camp-20] on 10 Dec 2016
+- [Ruby on Rails Oceania Sydney meetup][roro] (RORO) on 13 Dec 2016
+  ([video][ROROSyd video]).
+
+In 2021, I gave the project a minor do-over, re-recorded the presentation, and
+wrote a blog post to wrap around it. They can be found at:
+
+- :memo: Blog post: _[Test-Driven Fairy Tale][]_
+- :video_camera: Video: _[The Story of The Three Little Pigs][]_
+
+The original presentation deck of the can be
+[found on Speakerdeck][Speakerdeck], and all other presentation-related
+resources, including the location of the [Keynote][] file, can be [found on
+Github][Github].
+
 ## Installation :pig_nose:
 
 First, install Ruby 3.0 on your local machine, then:
@@ -53,28 +75,11 @@ View test coverage report:
 
     $ open coverage/index.html
 
-## Presentation :performing_arts:
+## Licenses :house:
 
-This project was originally presented at:
-
-- [Rails Camp 20][rails-camp-20] on 10 Dec 2016
-- [Ruby on Rails Oceania Sydney meetup][roro] (RORO) on 13 Dec 2016.
-
-A video of the presentation at RORO can be found at:
-
-- [Vimeo][vimeo-url]
-- [YouTube][youtube-url]
-
-All the beautiful illustrations used in the presentation were created by
-[Lee Sheppard][].
-
-The presentation deck can be [found on Speakerdeck][Speakerdeck], and all other
-presentation-related resources, including the location of the [Keynote][] file,
-can be [found on Github][Github].
-
-## License :house:
-
-This story is available as open source under the terms of the [MIT License][].
+The story code is available as open source under the terms of the
+[MIT License][], while the presentation and creative arrangement of the story is
+available under the [Creative Commons Attribution 4.0 license][] (CC-BY-4.0).
 
 ## Social :sparkles:
 
@@ -85,6 +90,7 @@ This story is available as open source under the terms of the [MIT License][].
 [code-climate-coverage-badge]: https://codeclimate.com/github/paulfioravanti/three_little_pigs/badges/coverage.svg
 [code-climate-coverage-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
 [code-climate-url]: https://codeclimate.com/github/paulfioravanti/three_little_pigs
+[Creative Commons Attribution 4.0 license]: LICENSE-CC.txt
 [Disneyfy]: https://www.dictionary.com/browse/disneyfy
 [Github]: https://github.com/paulfioravanti/presentations/tree/master/three_little_pigs
 [Guard]: https://github.com/guard/guard/
@@ -95,6 +101,7 @@ This story is available as open source under the terms of the [MIT License][].
 [MIT License]: LICENSE.txt
 [rails-camp-20]: https://ti.to/ruby-australia/rails-camp-queensland-2016/en
 [roro]: https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/events/234773812/
+[ROROSyd video]: https://www.youtube.com/watch?v=hxhibetoPLw
 [RSpec]: http://rspec.info/
 [Ruby]: https://github.com/ruby/ruby
 [Simplecov]: https://github.com/colszowka/simplecov
@@ -102,10 +109,10 @@ This story is available as open source under the terms of the [MIT License][].
 [stackoverflow-badge]: http://stackoverflow.com/users/flair/567863.png
 [stackoverflow-url]: http://stackoverflow.com/users/567863/paul-fioravanti
 [survey-tool-elixir]: https://github.com/paulfioravanti/survey_tool_elixir
+[Test-Driven Fairy Tale]: https://www.paulfioravanti.com/blog/test-driven-fairy-tale/
+[The Story of The Three Little Pigs]: https://www.youtube.com/watch?v=4NrU1YMd1qE
 [three-little-pigs-story]: http://www.authorama.com/english-fairy-tales-16.html
 [travis-badge]: https://travis-ci.org/paulfioravanti/three_little_pigs.svg?branch=master
 [travis-url]: https://travis-ci.org/paulfioravanti/three_little_pigs
 [twitter-badge]: https://img.shields.io/badge/contact-%40paulfioravanti-blue.svg
 [twitter-url]: https://twitter.com/paulfioravanti
-[vimeo-url]: https://vimeo.com/196540052
-[youtube-url]: https://www.youtube.com/watch?v=hxhibetoPLw
