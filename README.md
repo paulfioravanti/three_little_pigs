@@ -18,10 +18,14 @@ and the details of the implementation do not matter: it's all about the flow
 of the story during the presentation, and showing how the story's state changes
 as it progresses.
 
-## Presentation :performing_arts:
+## Illustrations
 
 All the beautiful illustrations used in the presentation were created by
 [Lee Sheppard][].
+
+## Presentation :performing_arts:
+
+### Original
 
 This project was originally presented at:
 
@@ -29,16 +33,18 @@ This project was originally presented at:
 - [Ruby on Rails Oceania Sydney meetup][roro] (RORO) on 13 Dec 2016
   ([video][ROROSyd video]).
 
+The original presentation deck of the can be
+[found on Speakerdeck][Speakerdeck], and all other presentation-related
+resources, including the location of the [Keynote][] file, can be [found on
+Github][Github].
+
+### Version 2
+
 In 2021, I gave the project a minor do-over, re-recorded the presentation, and
 wrote a blog post to wrap around it. They can be found at:
 
 - :memo: Blog post: _[Test-Driven Fairy Tale][]_
 - :video_camera: Video: _[The Story of The Three Little Pigs][]_
-
-The original presentation deck of the can be
-[found on Speakerdeck][Speakerdeck], and all other presentation-related
-resources, including the location of the [Keynote][] file, can be [found on
-Github][Github].
 
 ## Installation :pig_nose:
 
